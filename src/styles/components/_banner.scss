@@ -1,0 +1,41 @@
+.banner_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    z-index: 1;
+
+    .banner_text-container {
+        padding: 30px;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            color: $white;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: $main;
+            font-family: 'Secular One', sans-serif;
+        }
+    }
+
+    .banner_photo-container {
+        padding: 30px;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+
+.notebook {
+    cursor: pointer;
+}
+
+

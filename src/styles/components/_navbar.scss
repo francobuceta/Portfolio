@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $dark;
+    font-size: 'Raleway', sans-serif;
+}
+
+.navbar_logo-container {
+    .navbar_logo {
+        font-size: 1.7rem;
+        font-size: "Poppins", sans-serif!important;
+        color: $white;
+
+        &:before {
+            content: "<";
+            display: inline-block;
+            padding: 8px;
+            color: $secondary;
+        }
+
+        &:after {
+            content: "/>";
+            display: inline-block;
+            padding: 8px;
+            color: $secondary;
+        }
+    }
+}
+
+.navbar_list {
+    li {
+        padding: 8px;
+
+        span {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $white;
+        }
+    }
+}
