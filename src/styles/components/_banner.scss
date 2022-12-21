@@ -18,7 +18,7 @@
 
         h1 {
             font-size: 4rem;
-            color: $main;
+            color: $primary;
             font-family: 'Secular One', sans-serif;
         }
     }
@@ -27,8 +27,9 @@
         padding: 30px;
 
         img {
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
         }
     }
 }

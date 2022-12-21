@@ -1,4 +1,4 @@
-import logo from "../assets/react.svg";
+import foto from "../assets/foto.jpg";
 /* import Spline from '@splinetool/react-spline'; */
 import { useEffect } from "react";
 
@@ -13,7 +13,7 @@ const Banner = () => {
             <section className="container mx-auto px-16">
                 <div className="banner_container">
                     <div className="banner_photo-container">
-                        <img src={logo} alt="" />
+                        <img src={foto} alt="" />
                     </div>
 
                     <div className="banner_text-container">

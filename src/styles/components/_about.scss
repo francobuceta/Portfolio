@@ -1,0 +1,105 @@
+/* About */
+
+.about_title {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        color: $white;
+        font-size: 2.5rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+
+    :after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 5px;
+        background-color: $primary;
+        margin: 10px auto 40px;
+    }
+}
+
+.about_description {
+    padding: 20px;
+    line-height: 40px;
+
+    h3 {
+        color: $white;
+        font-size: 1.3rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+
+    p {
+        color: $grey;
+        font-size: 1.1rem;
+        font-family: 'Raleway', sans-serif;
+        line-height: 40px;
+    }
+
+    .description {
+        color: $primary;
+        font-size: 1.5rem;
+        font-family: 'Secular One', sans-serif;
+        font-weight: 700;
+    }
+
+    div {
+        margin-top: 10px;
+
+        button {
+            color: $white;
+            background-color: $secondary;
+            font-size: 1.3rem;
+            border: none;
+            padding: 3px 20px 3px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            span {
+                font-family: 'Raleway', sans-serif;;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.about_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+
+    .skills_title {
+        grid-column-start: span 3;
+        color: $white;
+        font-size: 1.3rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+
+    .skill_item {
+        background-color: rgb(53, 50, 50);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        font-size: 50px;
+        color: $white;
+        
+        span {
+            margin-top: 20px;
+            font-size: 1rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+        }
+    }
+    
+    .skill_item:hover {
+        color: $secondary;
+    }
+}
