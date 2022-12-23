@@ -33,7 +33,7 @@
     }
 
     p {
-        color: $grey;
+        color: #e8f1f5; 
         font-size: 1.1rem;
         font-family: 'Raleway', sans-serif;
         line-height: 40px;
@@ -100,6 +100,6 @@
     }
     
     .skill_item:hover {
-        color: $secondary;
+        color: $primary;
     }
 }

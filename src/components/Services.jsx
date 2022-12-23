@@ -10,7 +10,7 @@ const Services = () => {
                 </div>
                 
                 <div className='flex justify-center items-center text-white font-poppins text-xl'>
-                    <h3>Estos son los servicios que ofrezco</h3>
+                    <h3>Estos son los servicios que ofrezco.</h3>
                 </div>
                 
                 <div className="services_container">

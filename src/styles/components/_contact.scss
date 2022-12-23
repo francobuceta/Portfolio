@@ -1,60 +1,127 @@
+.contact_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-size: 4rem;
+    transition: all 0.4s;
+    
+    &:hover a {
+        transition: all 0.4s;
+        transform: scale(1.2);
+        color: $primary;
+    }
+
+    a {
+        color: $grey-light;
+    }
+
+    span {
+        font-size: 1.1rem;
+        font-family: "Poppins", sans-serif;
+        color: $white;
+    }
+}
+
 .form_container {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
     .form {
         width: 500px;
-        height: 400px;
-        background-color: #151515;;
-        padding: 80px;
+        height: 425px;
+        padding: 45px;
+        border-radius: 10px;
+        border: 3px solid $grey-light;
 
         div {
             display: flex;
             justify-content: center;
             position: relative;
 
-            input {
+            span {
+                right: 70px;
+                font-size: 20px;
+                position: absolute;
+                top: 39%;
+                pointer-events: none;
+                color: $grey-light;
+                transition: 0.3s;
+                translate: 0 -50%;
+                padding: 4px 8px;
+            }
+
+            input,
+            textarea {
                 height: 56px;
-                width: 260px;
+                width: 290px;
                 margin-bottom: 20px;
                 padding-left: 16px;
-                border: 2px solid #888888;
+                border: 2px solid $grey-light;
                 border-radius: 8px;
                 outline: none;
-                background: transparent;
-                color: #f9f9f9;
+                background: $dark;
+                color: $white;
                 font-size: 16px;
                 
-
                 &:focus {
                     border-color: $primary;
                 }
+            }
 
-                &:focus + label {
-                    background: #151515;;
-                    color: rgba(255, 255, 255, 0.75);
-                    translate: 0 -46px;
-                    border-radius: 10px;
-                }
+            textarea {
+                height: 130px;
+                padding: 16px 0 0 16px;
             }
 
             label {
                 position: absolute;
                 top: 40%;
-                translate: 0 -50%;
                 pointer-events: none;
-                color: #888888;
+                color: $grey-light;
                 transition: 0.3s;
-                left: 50px;
+                left: 70px;
                 translate: 0 -50%;
                 padding: 4px 8px;
                 font-family: "Poppins", sans-serif;
+                border-radius: 10px;
             }
 
-            #submit {
-                cursor: pointer;
-                font-family: "Poppins", sans-serif;
+            .text_label {
+                top: 20%;
+            }
+        }
+
+        #submit {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 150px;
+            height: 45px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            color: $white;
+            background-color: $secondary;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover {
+                color: $secondary;
+                background-color: $white;
             }
         }
     }
+}
+
+.form div > :is(input:focus, textarea:focus, .has-value) ~ label {
+    background: $dark;
+    color: $white;
+    translate: 0 -46px;
+}
+
+.form div > :is(input:focus, textarea:focus, .has-value) ~ span {
+    color: $primary;
 }

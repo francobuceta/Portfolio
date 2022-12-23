@@ -14,7 +14,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className='flex justify-center items-center text-white font-poppins text-xl'>
-                    <h3>Algunos de mis proyectos más destacados hasta el momento</h3>
+                    <h3>Algunos de mis proyectos más destacados hasta el momento.</h3>
                 </div>
 
                 <div className="portfolio_container">
