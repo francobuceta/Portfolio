@@ -4,7 +4,7 @@ import { faMobileScreenButton, faPalette, faCode, faCartShopping, faGaugeHigh, f
 const Services = () => {
     return (
         <>
-            <section className="container mx-auto px-16 mt-36">
+            <section className="container mx-auto px-16 mt-36" id="services">
                 <div className="about_title">
                     <h2>Servicios</h2>
                 </div>

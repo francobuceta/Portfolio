@@ -4,16 +4,16 @@
     align-items: center;
     gap: 12px;
     font-size: 4rem;
-    transition: all 0.4s;
+    transition: all 1.3s;
     
     &:hover a {
-        transition: all 0.4s;
         transform: scale(1.2);
         color: $primary;
     }
 
     a {
         color: $grey-light;
+        transition: all 0.6s;
     }
 
     span {
