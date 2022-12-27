@@ -58,10 +58,16 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            transition: 0.6s;
             
             span {
                 font-family: 'Raleway', sans-serif;;
                 font-weight: 300;
+            }
+
+            &:hover {
+                background-color: $white;
+                color: $secondary;
             }
         }
     }

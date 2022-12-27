@@ -1,15 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faSass, faBootstrap, faReact, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
-
-
+import pdf from "../assets/cv.pdf"
 
 const About = () => {
     return (
         <>
-            <section className="container mx-auto mt-16" id="about">
+            <section className="container mx-auto" id="about">
                 <div className="about_title">
-                    <h2>Acerca de mi</h2>
+                    <h2 className='mt-24'>Acerca de mi</h2>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-10">
@@ -24,10 +23,12 @@ const About = () => {
                             autem explicabo nulla ex, atque asperiores! Excepturi ex ad libero!
                         </p>
                         <div>
-                            <button>
-                                <FontAwesomeIcon icon={faFileDownload} />
-                                <span>Descargar CV</span>
-                            </button>
+                            <a href={pdf} download="Franco Buceta-CV">
+                                <button>
+                                    <FontAwesomeIcon icon={faFileDownload} />
+                                    <span>Descargar CV</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                     

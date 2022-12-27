@@ -1,12 +1,31 @@
+import { useState, useEffect } from "react";
+
 const Navbar = () => {
+
+    const [show, handleShow] = useState(false);
+
+    const onScroll = () => {
+        if (window.scrollY > 0) {
+            handleShow(true);
+        } else handleShow(false);
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', onScroll);
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+        };
+    }, []);
+
     return (
         <>
-            <header className="container mx-auto" id="navbar">
-                <nav className="flex justify-between items-center">
-                    <div className="navbar_logo-container px-10">
+
+            <header className="container" id="navbar">
+                <nav className={show ? "navbar_scroll" : ""} >
+                    <div className="navbar_logo-container px-24">
                         <a href="#navbar"><span className="navbar_logo">francobuceta</span></a>
                     </div>
-                    <div className="px-10">
+                    <div className="px-24">
                         <ul className="flex navbar_list">
                             <li>
                                 <a href="#navbar"><span>Inicio</span></a>
@@ -27,6 +46,7 @@ const Navbar = () => {
                     </div>
                 </nav>
             </header>
+
         </>
     )
 }

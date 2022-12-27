@@ -11,9 +11,9 @@ const Contact = () => {
 
     return (
         <>
-            <section className="container mx-auto px-16 mt-36" id="contact">
+            <section className="container mx-auto px-16" id="contact">
                 <div className="about_title">
-                    <h2>Contacto</h2>
+                    <h2 className='mt-24'>Contacto</h2>
                 </div>
 
                 <div className='flex justify-center items-center text-white font-poppins text-xl text-center'>

@@ -8,9 +8,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 const Portfolio = () => {
     return (
         <>
-            <section className="container mx-auto px-16 mt-36" id="portfolio">
+            <section className="container mx-auto px-16" id="portfolio">
                 <div className="about_title">
-                    <h2>Portfolio</h2>
+                    <h2 className='mt-24'>Portfolio</h2>
                 </div>
 
                 <div className='flex justify-center items-center text-white font-poppins text-xl'>
