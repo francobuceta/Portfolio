@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-scroll";
 import usa from "../assets/usa.png";
 import spain from "../assets/spain.png";
 
@@ -38,19 +39,23 @@ const Navbar = () => {
                     <div className="px-24">
                         <ul className="flex navbar_list">
                             <li>
-                                <a href="#navbar"><span>{t("navbar.home")}</span></a>
+                                <Link activeClass="navbar_active" spy to="navbar">
+                                    <span>{t("navbar.home")}</span>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#about"><span>{t("navbar.about")}</span></a>
+                                <Link activeClass="navbar_active" spy to="about">
+                                    <span>{t("navbar.about")}</span>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#portfolio"><span>{t("navbar.portfolio")}</span></a>
+                                <Link activeClass="navbar_active" spy to="portfolio"><span>{t("navbar.portfolio")}</span></Link>
                             </li>
                             <li>
-                                <a href="#services"><span>{t("navbar.services")}</span></a>
+                                <Link activeClass="navbar_active" spy to="services"><span>{t("navbar.services")}</span></Link>
                             </li>
                             <li>
-                                <a href="#contact"><span>{t("navbar.contact")}</span></a>
+                                <Link activeClass="navbar_active" spy to="contact"><span>{t("navbar.contact")}</span></Link>
                             </li>
                         </ul>
                     </div>

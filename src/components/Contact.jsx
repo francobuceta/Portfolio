@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faEnvelope, faPaperPlane, faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
 
@@ -39,6 +39,13 @@ const Contact = () => {
                 </div>
 
                 <div className="form_container">
+
+                    <div className="arrow_up">
+                        <a href="#navbar">
+                            <FontAwesomeIcon icon={faArrowCircleUp} />
+                        </a>
+                    </div>
+
                     <form action="" className="form">
                         <div>
                             <input id="name" type="text" 

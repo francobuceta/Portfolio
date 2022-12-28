@@ -42,10 +42,6 @@ header {
     }
 }
 
-.navbar_active {
-    color: aqua;
-}
-
 .navbar_logo-container {
     display: flex;
     align-items: center;
@@ -101,6 +97,7 @@ header {
             font-size: 1.1rem;
             font-weight: 500;
             color: $white;
+            cursor: pointer;
 
             &:after {
                 content: "";
@@ -120,4 +117,8 @@ header {
             }
         }
     }
+}
+
+.navbar_active span {
+    color: $primary!important;
 }

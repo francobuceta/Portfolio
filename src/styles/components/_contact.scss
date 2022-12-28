@@ -24,9 +24,18 @@
 }
 
 .form_container {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 40px;
+
+    .arrow_up {
+        position: absolute;
+        left: 100px;
+        top: 300px;
+        color: $white;
+        font-size: 3.5rem;
+    }
 
     .form {
         width: 500px;
