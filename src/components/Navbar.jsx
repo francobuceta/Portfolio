@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import usa from "../assets/usa.png";
+import spain from "../assets/spain.png";
 
 const Navbar = () => {
 
@@ -17,6 +20,8 @@ const Navbar = () => {
         };
     }, []);
 
+    const [t, i18n] = useTranslation("global");
+
     return (
         <>
 
@@ -24,23 +29,28 @@ const Navbar = () => {
                 <nav className={show ? "navbar_scroll" : ""} >
                     <div className="navbar_logo-container px-24">
                         <a href="#navbar"><span className="navbar_logo">francobuceta</span></a>
+                        
+                        <div className="flex gap-3">
+                            <img src={spain} alt="Bandera de España" onClick={() => i18n.changeLanguage("es")}/>
+                            <img src={usa} alt="Bandera de Estados Unidos" onClick={() => i18n.changeLanguage("en")}/>
+                        </div>
                     </div>
                     <div className="px-24">
                         <ul className="flex navbar_list">
                             <li>
-                                <a href="#navbar"><span>Inicio</span></a>
+                                <a href="#navbar"><span>{t("navbar.home")}</span></a>
                             </li>
                             <li>
-                                <a href="#about"><span>Acerca</span></a>
+                                <a href="#about"><span>{t("navbar.about")}</span></a>
                             </li>
                             <li>
-                                <a href="#portfolio"><span>Portfolio</span></a>
+                                <a href="#portfolio"><span>{t("navbar.portfolio")}</span></a>
                             </li>
                             <li>
-                                <a href="#services"><span>Servicios</span></a>
+                                <a href="#services"><span>{t("navbar.services")}</span></a>
                             </li>
                             <li>
-                                <a href="#contact"><span>Contacto</span></a>
+                                <a href="#contact"><span>{t("navbar.contact")}</span></a>
                             </li>
                         </ul>
                     </div>

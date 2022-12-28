@@ -42,6 +42,9 @@ header {
 }
 
 .navbar_logo-container {
+    display: flex;
+    align-items: center;
+    
     .navbar_logo {
         font-size: 1.7rem;
         font-size: "Poppins", sans-serif !important;
@@ -69,6 +72,13 @@ header {
                 color: $white;
             }
         }
+    }
+
+    img {
+        height: 35px;
+        width: 35px;
+        object-fit: scale-down;
+        cursor: pointer;
     }
 }
 

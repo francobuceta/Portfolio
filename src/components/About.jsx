@@ -1,39 +1,36 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faSass, faBootstrap, faReact, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 import pdf from "../assets/cv.pdf"
 
 const About = () => {
+    const [t, i18n] = useTranslation("global");
+
     return (
         <>
             <section className="container mx-auto" id="about">
                 <div className="about_title">
-                    <h2 className='mt-24'>Acerca de mi</h2>
+                    <h2 className='mt-24'>{t("about.aboutMe")}</h2>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-10">
                     <div className="about_description mt-5">
-                        <h3 className="mb-5">Quien soy :</h3>
-                        <p className="description">Soy Franco Buceta, un apasionado de la tecnología <br />y Desarrollador Web</p>
-                        <p className="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit itaque 
-                            autem explicabo nulla ex, atque asperiores! Excepturi ex ad libero!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit itaque 
-                            autem explicabo nulla ex, atque asperiores! Excepturi ex ad libero!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit itaque 
-                            autem explicabo nulla ex, atque asperiores! Excepturi ex ad libero!
-                        </p>
+                        <h3 className="mb-5">{t("about.who")}</h3>
+                        <p className="description">{t("about.description")}</p>
+                        <p className="mt-5">{t("about.description2")}</p>
                         <div>
                             <a href={pdf} download="Franco Buceta-CV">
                                 <button>
                                     <FontAwesomeIcon icon={faFileDownload} />
-                                    <span>Descargar CV</span>
+                                    <span>{t("about.download")}</span>
                                 </button>
                             </a>
                         </div>
                     </div>
                     
                     <div className="about_skills mt-5">
-                        <div className="skills_title"><h3>Mis habilidades :</h3></div>
+                        <div className="skills_title"><h3>{t("about.skills")}</h3></div>
                         <div className="skill_item">
                             <FontAwesomeIcon icon={faHtml5} />
                             <span>HTML</span>

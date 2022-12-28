@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
 
@@ -9,29 +10,31 @@ const Contact = () => {
     const [valueMail, setValueMail] = useState("");
     const [valueMessage, setValueMessage] = useState("");
 
+    const [t, i18n] = useTranslation("global");
+
     return (
         <>
             <section className="container mx-auto px-16" id="contact">
                 <div className="about_title">
-                    <h2 className='mt-24'>Contacto</h2>
+                    <h2 className='mt-24'>{t("contact.title")}</h2>
                 </div>
 
                 <div className='flex justify-center items-center text-white font-poppins text-xl text-center'>
-                    <h3 className="max-w-5xl">Sientete libre de comunicarte conmigo y charlar sobre algún trabajo freelance, o en empresa, o simplemente..¡charlar! &#128516;</h3>
+                    <h3 className="max-w-5xl">{t("contact.description")}</h3>
                 </div>
 
                 <div className="flex justify-center mt-10 gap-11">
                     <div className="contact_icons">
                         <a href="mailto:francobuceta95@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /></a>
-                        <span>Envíame un e-mail</span>
+                        <span>{t("contact.email")}</span>
                     </div>
                     <div className="contact_icons">
                         <a href="https://www.linkedin.com/in/francobuceta/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-                        <span>Contáctame por LinkedIn</span>
+                        <span>{t("contact.linkedin")}</span>
                     </div>
                     <div className="contact_icons">
                         <a href="https://github.com/francobuceta" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                        <span>Sigueme en GitHub</span>
+                        <span>{t("contact.github")}</span>
                     </div>
                 </div>
 
@@ -43,7 +46,7 @@ const Contact = () => {
                                 className={valueName ? "has-value" : ""}>
                             </input>
                             <span><FontAwesomeIcon icon={faUser} /></span>
-                            <label htmlFor="name">Nombre</label>
+                            <label htmlFor="name">{t("contact.name")}</label>
                         </div>
                         
                         <div>
@@ -60,10 +63,10 @@ const Contact = () => {
                                 onChange={e => setValueMessage(e.target.value)} 
                                 className={valueMessage ? "has-value" : ""}>
                             </textarea>
-                            <label htmlFor="text" className="text_label">Mensaje</label>
+                            <label htmlFor="text" className="text_label">{t("contact.message")}</label>
                         </div>
                         
-                        <input id="submit" type="submit" value="Enviar"></input>
+                        <input id="submit" type="submit" value={t("contact.send")}></input>
                         
                     </form>
                 </div>

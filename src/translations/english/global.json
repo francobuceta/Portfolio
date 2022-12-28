@@ -1,0 +1,52 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "portfolio": "Portfolio",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "banner": {
+        "greeting": "Hi !",
+        "name": "I'm Franco Buceta",
+        "profession": "- Frontend Developer -"
+    },
+    "about": {
+        "aboutMe": "About Me",
+        "who": "Who Am I :",
+        "description": "A tech passionate and React Web Developer.",
+        "description2": "I am located in Buenos Aires, Argentina. I have a passion for creating and building dynamic and user-friendly websites and web applications. With my problem-solving skills and attention to detail, I'm able to troubleshoot and debug complex issues, ensuring that the projects are delivered on time and to the highest quality. I'm a team player and enjoy collaborating with others to find creative solutions to challenges.",
+        "download": "Download CV",
+        "skills": "My skills :"
+    },
+    "portfolio": {
+        "title": "Some of my most outstanding projects so far.",
+        "website": "Website",
+        "repository": "Repository"
+    },
+    "services": {
+        "title": "Services",
+        "description": "These are the services I offer.",
+        "mobile-title": "Fully Responsive",
+        "mobile": "Your site will display properly on any device, including desktop computers, tablets and mobile phones.",
+        "design-title": "Creative Design",
+        "design": "A good and attractive web design helps you keep your leads on your site, which is the digital face of your business.",
+        "develop-title": "Development",
+        "develop": "Sites that are easy to use, with an intuitive interface, and also dynamic. This will grow visits and, in turn, your business.",
+        "ecommerce-title": "Ecommerce",
+        "ecommerce": "I can create fully functional online stores where the user can make transactions.",
+        "performance-title": "Performance",
+        "performance": "A fast and well-functioning website is crucial. High performing sites attract and retain users.",
+        "seo": "I will optimize your site with intelligent Search Engine Optimization strategy to generate leads."
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Feel free to contact me and chat about a freelance job, or in a company, or just... chat! 😄",
+        "email": "Send me an e-mail",
+        "linkedin": "Contact me on LinkedIn",
+        "github": "Follow me on GitHub",
+        "name": "Name",
+        "message": "Message",
+        "send": "Send"
+    }
+}

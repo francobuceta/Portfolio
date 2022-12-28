@@ -1,12 +1,10 @@
 import foto from "../assets/foto.jpg";
 /* import Spline from '@splinetool/react-spline'; */
-import { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
 
-    useEffect(() => {
-
-    })
+    const [t, i18n] = useTranslation("global");
 
     return (
         <>
@@ -17,9 +15,9 @@ const Banner = () => {
                     </div>
 
                     <div className="banner_text-container">
-                        <h2>¡ Hola !</h2>
-                        <h1>Soy Franco Buceta</h1>
-                        <h2>- Frontend Developer -</h2>
+                        <h2>{t("banner.greeting")}</h2>
+                        <h1>{t("banner.name")}</h1>
+                        <h2>{t("banner.profession")}</h2>
                     </div>
                 </div>
             </section>

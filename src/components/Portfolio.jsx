@@ -4,8 +4,12 @@ import foto3 from "../assets/proyecto-prodeconsa.jpeg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmerica } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
+
+    const [t, i18n] = useTranslation("global");
+
     return (
         <>
             <section className="container mx-auto px-16" id="portfolio">
@@ -14,7 +18,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className='flex justify-center items-center text-white font-poppins text-xl'>
-                    <h3>Algunos de mis proyectos más destacados hasta el momento.</h3>
+                    <h3>{t("portfolio.title")}</h3>
                 </div>
 
                 <div className="portfolio_container">
@@ -31,11 +35,11 @@ const Portfolio = () => {
                                 <div className="buttons__container">
                                     <a className="button" href="https://pickandroll.netlify.app/" target="_blank">
                                         <FontAwesomeIcon icon={faEarthAmerica} />
-                                        <span>Sitio Web</span>
+                                        <span>{t("portfolio.website")}</span>
                                     </a>
                                     <a className="button" href="https://github.com/francobuceta/Ecommerce-React" target="_blank">
                                         <FontAwesomeIcon icon={faGithub} />
-                                        <span>Repositorio</span>
+                                        <span>{t("portfolio.repository")}</span>
                                     </a>
                                 </div>
                             </div>
@@ -54,11 +58,11 @@ const Portfolio = () => {
                                 <div className="buttons__container">
                                     <a className="button" href="https://asteroids-atari.netlify.app/" target="_blank">
                                         <FontAwesomeIcon icon={faEarthAmerica} />
-                                        <span>Sitio Web</span>
+                                        <span>{t("portfolio.website")}</span>
                                     </a>
                                     <a className="button" href="https://github.com/francobuceta/Asteroids" target="_blank">
                                         <FontAwesomeIcon icon={faGithub} />
-                                        <span>Repositorio</span>
+                                        <span>{t("portfolio.repository")}</span>
                                     </a>
                                 </div>
                             </div>
@@ -77,11 +81,11 @@ const Portfolio = () => {
                                 <div className="buttons__container">
                                     <a className="button" href="https://amprodeconsa.com/index.html" target="_blank">
                                         <FontAwesomeIcon icon={faEarthAmerica} />
-                                        <span>Sitio Web</span>
+                                        <span>{t("portfolio.website")}</span>
                                     </a>
                                     <a className="button" href="https://github.com/francobuceta/Prodeconsa-SA" target="_blank">
                                         <FontAwesomeIcon icon={faGithub} />
-                                        <span>Repositorio</span>
+                                        <span>{t("portfolio.repository")}</span>
                                     </a>
                                 </div>
                             </div>
