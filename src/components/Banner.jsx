@@ -11,7 +11,7 @@ const Banner = () => {
             <section className="container mx-auto px-16">
                 <div className="banner_container">
                     <div className="banner_photo-container">
-                        <img src={foto} alt="" />
+                        <img src={foto} alt="Foto personal" />
                     </div>
 
                     <div className="banner_text-container">
@@ -19,6 +19,17 @@ const Banner = () => {
                         <h1>{t("banner.name")}</h1>
                         <h2>{t("banner.profession")}</h2>
                     </div>
+                </div>
+
+                <div className="box">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
             </section>
 

@@ -24,13 +24,14 @@ header {
         align-items: center;
         width: 100%;
         margin: 0 auto;
+        z-index: 1;
     }
 }
 
 .navbar_scroll {
     background-color: $white;
     transition: 0.6s;
-    z-index: 1;
+    z-index: 2;
 
     .navbar_logo-container .navbar_logo {
         color: $dark
@@ -39,6 +40,10 @@ header {
     .navbar_list li span {
         color: $dark;
     }
+}
+
+.navbar_active {
+    color: aqua;
 }
 
 .navbar_logo-container {
@@ -78,7 +83,13 @@ header {
         height: 35px;
         width: 35px;
         object-fit: scale-down;
+        filter: grayscale(70%);
         cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+            filter: grayscale(0);
+        }
     }
 }
 

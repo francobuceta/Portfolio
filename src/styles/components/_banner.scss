@@ -3,11 +3,11 @@
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    z-index: 1;
 
     .banner_text-container {
         padding: 30px;
         text-align: center;
+        z-index: 1;
 
         h2 {
             font-size: 2.5rem;
@@ -25,6 +25,7 @@
 
     .banner_photo-container {
         padding: 30px;
+        z-index: 1;
 
         img {
             width: 250px;
@@ -34,9 +35,58 @@
     }
 }
 
+.box ul li {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	opacity: 0;
+	background: radial-gradient($secondary, transparent, transparent);
+	bottom: 0;
+	left: 10vw;
+	animation: animate 10s linear infinite;
+    z-index: 0;
+
+    &:nth-child(2) {
+        left: 36vw;
+        animation-delay: 2s;
+    }
+
+    &:nth-child(3) {
+        left: 22vw;
+        animation-delay: 4s;
+    }
+
+    &:nth-child(4) {
+        left: 56vw;
+        animation-delay: 6s;
+    }
+
+    &:nth-child(5) {
+        left: 76vw;
+        animation-delay: 4s;
+    }
+
+    &:nth-child(6) {
+        left: 80vw;
+        animation-delay: 8s;
+    }
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+		bottom: 0;
+	}
+	100% {
+		transform: scale(10);
+		opacity: 0;
+		bottom: 100vh;
+	}
+}
+
+
 
 .notebook {
     cursor: pointer;
 }
-
-
