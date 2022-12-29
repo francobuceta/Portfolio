@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import foto1 from "../assets/proyect-ecommerce2.jpeg";
 import foto2 from "../assets/proyect-asteroids.png";
 import foto3 from "../assets/proyecto-prodeconsa.jpeg";
@@ -5,19 +6,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmerica } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
+import ScrollReveal from 'scrollreveal';
 
 const Portfolio = () => {
 
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
+
+    useEffect(() => {
+        ScrollReveal().reveal('#title_portfolio', {
+            delay: 350,
+        });
+        ScrollReveal().reveal('#sub_portfolio', {
+            delay: 400,
+        });
+        ScrollReveal().reveal('.portfolio_container', {
+            delay: 500,
+        });
+    }, [])
 
     return (
         <>
             <section className="container mx-auto px-16" id="portfolio">
-                <div className="about_title">
+                <div className="about_title" id="title_portfolio">
                     <h2 className='mt-24'>Portfolio</h2>
                 </div>
 
-                <div className='flex justify-center items-center text-white font-poppins text-xl'>
+                <div className='flex justify-center items-center text-white font-poppins text-xl' id="sub_portfolio">
                     <h3>{t("portfolio.title")}</h3>
                 </div>
 

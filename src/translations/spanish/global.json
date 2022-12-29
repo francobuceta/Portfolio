@@ -47,6 +47,9 @@
         "github": "Sigueme en GitHub",
         "name": "Nombre",
         "message": "Mensaje",
-        "send": "Enviar"
+        "send": "Enviar",
+        "sent": "Enviado",
+        "gratitude": "Muchas gracias, pronto me comunicaré contigo",
+        "arrow": "Ir hacia arriba"
     }
 }

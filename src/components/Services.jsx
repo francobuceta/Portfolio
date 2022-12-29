@@ -1,19 +1,33 @@
+import { useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileScreenButton, faPalette, faCode, faCartShopping, faGaugeHigh, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import ScrollReveal from 'scrollreveal';
 
 const Services = () => {
 
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
+
+    useEffect(() => {
+        ScrollReveal().reveal('#title_services', {
+            delay: 350,
+        });
+        ScrollReveal().reveal('#sub_services', {
+            delay: 400,
+        });
+        ScrollReveal().reveal('.services_container', {
+            delay: 500,
+        });
+    }, []);
 
     return (
         <>
             <section className="container mx-auto px-16" id="services">
-                <div className="about_title">
+                <div className="about_title" id="title_services">
                     <h2 className='mt-24'>{t("services.title")}</h2>
                 </div>
                 
-                <div className='flex justify-center items-center text-white font-poppins text-xl'>
+                <div className='flex justify-center items-center text-white font-poppins text-xl' id="sub_services">
                     <h3>{t("services.description")}</h3>
                 </div>
                 

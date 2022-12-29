@@ -47,6 +47,9 @@
         "github": "Follow me on GitHub",
         "name": "Name",
         "message": "Message",
-        "send": "Send"
+        "send": "Submit",
+        "sent": "Submitted",
+        "gratitude": "Thank you very much, I will contact you soon",
+        "arrow": "Go up"
     }
 }
