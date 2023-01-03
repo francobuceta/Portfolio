@@ -33,9 +33,9 @@ const Banner = () => {
                 </div>
             </section>
 
-            {/* <div className="notebook">
-                <Spline scene="https://prod.spline.design/B4j4SY3yy1XjQahQ/scene.splinecode" />
-            </div> */}
+            {/* <div className="flex justify-center">
+                <Spline scene="https://draft.spline.design/iXdd9hCf5Rl9ifZS/scene.splinecode" className="notebook" />
+            </div>  */}
         </>
     )
 }

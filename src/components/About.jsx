@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faSass, faBootstrap, faReact, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { faDatabase, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import pdf from "../assets/cv.pdf"
 import ScrollReveal from 'scrollreveal';
@@ -31,12 +31,12 @@ const About = () => {
                         <p className="description">{t("about.description")}</p>
                         <p className="mt-5">{t("about.description2")}</p>
                         <div>
-                            <a href={pdf} download="Franco Buceta-CV">
-                                <button>
+                            <button>
+                                <a href={pdf} download="Franco Buceta-CV">
                                     <FontAwesomeIcon icon={faFileDownload} />
                                     <span>{t("about.download")}</span>
-                                </button>
-                            </a>
+                                </a>
+                            </button>
                         </div>
                     </div>
                     
@@ -73,6 +73,10 @@ const About = () => {
                         <div className="skill_item">
                             <FontAwesomeIcon icon={faGithub} />
                             <span>GITHUB</span>
+                        </div>
+                        <div className="skill_item">
+                            <FontAwesomeIcon icon={faDatabase} />
+                            <span>FIREBASE</span>
                         </div>
                     </div>
                 </div>
