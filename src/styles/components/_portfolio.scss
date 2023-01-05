@@ -93,3 +93,20 @@
         }
     }
 }
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .portfolio_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .portfolio_container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+}

@@ -113,3 +113,34 @@
         color: $primary;
     }
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .mobile_padding {
+        padding-left: 1rem!important;
+        padding-right: 1rem!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about_skills {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        .skills_title {
+            grid-column-start: span 2;
+        }
+
+        .skill_item {
+            font-size: 40px;
+            padding: 25px;
+        }
+    }
+}

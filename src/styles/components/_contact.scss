@@ -5,7 +5,7 @@
     gap: 12px;
     font-size: 4rem;
     transition: all 1.3s;
-    
+
     &:hover a {
         transform: scale(1.2);
         color: $primary;
@@ -20,6 +20,7 @@
         font-size: 1.1rem;
         font-family: "Poppins", sans-serif;
         color: $white;
+        text-align: center;
     }
 }
 
@@ -39,7 +40,7 @@
         top: 250px;
         color: $primary;
         font-size: 3.5rem;
-        
+
         span {
             font-size: 1.4rem;
             font-weight: 600;
@@ -84,7 +85,7 @@
                 background: $dark;
                 color: $white;
                 font-size: 16px;
-                
+
                 &:focus {
                     border-color: $primary;
                 }
@@ -137,7 +138,7 @@
         #submitted {
             @extend #submit;
             background-color: green;
-            
+
             &:hover {
                 color: green;
                 background-color: $white;
@@ -153,12 +154,99 @@
     }
 }
 
-.form div > :is(input:focus, textarea:focus, .has-value) ~ label {
+.form div> :is(input:focus, textarea:focus, .has-value)~label {
     background: $dark;
     color: $white;
     translate: 0 -46px;
 }
 
-.form div > :is(input:focus, textarea:focus, .has-value) ~ span {
+.form div> :is(input:focus, textarea:focus, .has-value)~span {
     color: $primary;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .form_container .arrow_up {
+        right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .form_container .arrow_up {
+        right: -70px;
+        top: 250px;
+        font-size: 2.5rem;
+
+        span {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .form_container .arrow_up {
+        right: 5px;
+
+        span {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .contact_icons {
+        gap: 5px;
+        font-size: 3.5rem;
+
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    .form_container {
+        flex-direction: column-reverse;
+    
+        .arrow_up {
+            position: initial;
+            margin-top: 20px;
+            
+            span {
+                font-size: 1.3rem;
+            }
+        }
+
+        .form {
+            width: 400px;
+            height: 550px;
+            padding: 60px;
+
+            div {
+                span {
+                    right: 15px;
+                    top: 35%;
+                }
+
+                input,
+                textarea {
+                width: 500px;
+                margin-bottom: 30px;
+                }
+
+                textarea {
+                    height: 170px;
+                    margin-bottom: 40px;
+                }
+
+                label {
+                    top: 35%;
+                    left: 15px;
+                }
+            }
+        }
+
+        div:nth-child(3) label {
+            top: 15%!important;
+        }
+    }
 }

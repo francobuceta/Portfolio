@@ -33,16 +33,16 @@ const Contact = () => {
 
     return (
         <>
-            <section className="container mx-auto px-16 mb-5" id="contact">
+            <section className="container mx-auto px-16 mb-5 mobile_padding" id="contact">
                 <div className="about_title" id="title_contact">
-                    <h2 className='mt-24'>{t("contact.title")}</h2>
+                    <h2 className='lg:mt-24 mt-10'>{t("contact.title")}</h2>
                 </div>
 
-                <div className='flex justify-center items-center text-white font-poppins text-xl text-center' id="sub_contact">
+                <div className='flex justify-center items-center text-white font-poppins text-xl text-center mobile_padding' id="sub_contact">
                     <h3 className="max-w-5xl">{t("contact.description")}</h3>
                 </div>
 
-                <div className="flex justify-center mt-10 gap-11">
+                <div className="flex justify-center mt-10 gap-11 mobile_padding">
                     <div className="contact_icons">
                         <a href="mailto:francobuceta95@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /></a>
                         <span>{t("contact.email")}</span>

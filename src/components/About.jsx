@@ -25,8 +25,8 @@ const About = () => {
                     <h2 className='mt-24'>{t("about.aboutMe")}</h2>
                 </div>
                 
-                <div className="grid grid-cols-2 gap-10" id="about_content">
-                    <div className="about_description mt-5">
+                <div className="md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 mobile_padding" id="about_content">
+                    <div className="about_description lg:mt-5">
                         <h3 className="mb-5">{t("about.who")}</h3>
                         <p className="description">{t("about.description")}</p>
                         <p className="mt-5">{t("about.description2")}</p>
@@ -40,7 +40,7 @@ const About = () => {
                         </div>
                     </div>
                     
-                    <div className="about_skills mt-5">
+                    <div className="about_skills lg:mt-5">
                         <div className="skills_title"><h3>{t("about.skills")}</h3></div>
                         <div className="skill_item">
                             <FontAwesomeIcon icon={faHtml5} />

@@ -3,6 +3,68 @@
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    perspective: 800px;
+    z-index: 1;
+
+    #banner_image-click {
+        display: none;
+
+        &:checked + label > div {
+            transform: rotateY(0.5turn);
+        }
+    }
+
+    .banner_image {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        transition: 1s ease-in-out;
+        transform-style: preserve-3d;
+        cursor: pointer;
+
+        .card__face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            transition: 1s ease-in-out;
+            /* -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4)); */
+
+            img {
+                object-fit: cover;
+                border-radius: 100%;
+                width: 250px;
+                height: 250px;
+            }
+
+            &--back {
+                transform: rotateY(0.5turn);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                width: 250px;
+                height: 250px;
+                background-color: #dee2e5;
+                border-radius: 100%;
+
+                a {
+                    padding: 2px;
+                    align-items: center;
+                }
+
+                a span {
+                    color: $dark;
+                    font-size: 0.9rem;
+                    font-family: "Poppins", sans-serif;
+                    padding: 4px;
+                    align-items: center;
+                }
+            }
+        }
+    }
 
     .banner_text-container {
         padding: 30px;
@@ -22,17 +84,6 @@
             font-family: 'Secular One', sans-serif;
         }
     }
-
-    .banner_photo-container {
-        padding: 30px;
-        z-index: 1;
-
-        img {
-            width: 250px;
-            height: 250px;
-            border-radius: 100%;
-        }
-    }
 }
 
 .box ul li {
@@ -44,7 +95,7 @@
 	bottom: 0;
 	left: 10vw;
 	animation: animate 10s linear infinite;
-    z-index: 0;
+    z-index: -1;
 
     &:nth-child(2) {
         left: 36vw;
@@ -85,8 +136,22 @@
 	}
 }
 
+/* Media Queries */
 
+@media (max-width: 768px) {
+    .banner_container {
+        flex-direction:column-reverse;
 
-.notebook {
-    cursor: pointer;
+        .banner_text-container {
+            padding: 6px;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
 }

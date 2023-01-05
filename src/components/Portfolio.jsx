@@ -26,12 +26,12 @@ const Portfolio = () => {
 
     return (
         <>
-            <section className="container mx-auto px-16" id="portfolio">
+            <section className="container mx-auto px-16 mobile_padding" id="portfolio">
                 <div className="about_title" id="title_portfolio">
-                    <h2 className='mt-24'>Portfolio</h2>
+                    <h2 className='lg:mt-24 mt-10'>Portfolio</h2>
                 </div>
 
-                <div className='flex justify-center items-center text-white font-poppins text-xl' id="sub_portfolio">
+                <div className='flex justify-center items-center text-white font-poppins text-xl text-center' id="sub_portfolio">
                     <h3>{t("portfolio.title")}</h3>
                 </div>
 
