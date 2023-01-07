@@ -144,3 +144,25 @@
         }
     }
 }
+
+@media (max-width: 370px) {
+    .mobile_padding {
+        width: 100%;
+        .about_skills {
+            width: auto;
+            gap: 2px;
+        }
+    }
+    
+}
+
+@media (max-width: 350px) {
+    .about_skills {
+        grid-template-columns: 1fr;
+        gap: 6px!important;
+
+        .skills_title {
+            grid-column-start: span 1;
+        }
+    }
+}

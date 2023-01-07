@@ -41,7 +41,10 @@ const About = () => {
                     </div>
                     
                     <div className="about_skills lg:mt-5">
-                        <div className="skills_title"><h3>{t("about.skills")}</h3></div>
+                        <div className="skills_title">
+                            <h3 className='mb-5'>{t("about.skills")}</h3>
+                        </div>
+
                         <div className="skill_item">
                             <FontAwesomeIcon icon={faHtml5} />
                             <span>HTML</span>

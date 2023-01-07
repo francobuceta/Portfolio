@@ -3,6 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-scroll";
+import logo from "../assets/logo.png";
+import logo2 from "../assets/logo2.png";
+import logoMobile from "../assets/logo_mobile.png";
+import logoMobile2 from "../assets/logo_mobile2.png";
+import logoSmall from "../assets/logo_small.png";
 import usa from "../assets/usa.png";
 import spain from "../assets/spain.png";
 
@@ -30,7 +35,15 @@ const Navbar = () => {
             <header className="md:container" id="navbar">
                 <nav className={`${show ? "navbar_scroll" : ""} w-full`} >
                     <div className="navbar_logo-container px-24">
-                        <a href="#navbar"><span className="navbar_logo">francobuceta</span></a>
+                        <div className="logo_container">
+                            <a href="#navbar">
+                                <picture>
+                                    <source media="(max-width:400px)" srcSet={logoSmall}/>
+                                    <source media="(max-width:650px)" srcSet={show ? logoMobile2 : logoMobile}/>
+                                    <img src={show ? logo2 : logo} className="navbar_logo"></img>
+                                </picture>
+                            </a>
+                        </div>
 
                         <div className="desktop_flags flex gap-3">
                             <img src={spain} alt="Bandera de España" onClick={() => i18n.changeLanguage("es")} />

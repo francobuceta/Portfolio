@@ -50,37 +50,20 @@ header {
 .navbar_logo-container {
     display: flex;
     align-items: center;
-    
-    .navbar_logo {
-        font-size: 1.7rem;
-        font-size: "Poppins", sans-serif !important;
-        color: $white;
-        transition: 0.4s;
+    gap: 30px;
 
-        &:before {
-            content: "<";
-            display: inline-block;
-            padding: 8px;
-            color: $primary;
-            transition: 0.4s;
-        }
+    .logo_container {
+        width: auto;
+        height: auto;
 
-        &:after {
-            content: "/>";
-            @extend :before;
-        }
-
-        &:hover {
-            color: $primary;
-
-            &:before,
-            &:after {
-                color: $white;
-            }
+        .navbar_logo {
+            width: 250px;
+            height: 96px;
+            object-fit: contain;
         }
     }
-
-    img {
+    
+    .desktop_flags img {
         height: 35px;
         width: 35px;
         object-fit: scale-down;
@@ -178,6 +161,7 @@ header {
 @media (max-width: 1160px) {
     .hamburger_menu-container {
         display: block;
+        z-index: 2;
     }
 
     .desktop_flags {
@@ -189,14 +173,15 @@ header {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 650px) {
     .navbar_logo-container {
-        width: 50px;
+        width: 250px;
         display: flex;
         padding-left: 2rem;
 
         .navbar_logo {
-            font-size: 1rem;
+            width: 204px;
+            height: 138px;
         }
     }
 
@@ -204,3 +189,16 @@ header {
         padding-right: 2rem;
     }
 }
+
+@media (max-width: 400px) {
+    .navbar_logo-container {
+        width: 170px;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar_logo-container {
+        width: 160px;
+    }
+}
+

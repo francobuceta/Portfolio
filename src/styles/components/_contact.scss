@@ -199,6 +199,10 @@
         gap: 5px;
         font-size: 3.5rem;
 
+        a {
+            color: $primary;
+        }
+
         span {
             font-size: 1rem;
         }
@@ -206,6 +210,7 @@
 
     .form_container {
         flex-direction: column-reverse;
+        width: 100%;
     
         .arrow_up {
             position: initial;
@@ -217,7 +222,7 @@
         }
 
         .form {
-            width: 400px;
+            width: auto;
             height: 550px;
             padding: 60px;
 
@@ -250,3 +255,31 @@
         }
     }
 }
+
+@media (max-width: 350px) {
+    .contact_icons {
+        gap: 5px;
+        font-size: 3rem;
+
+        span {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .form_container .form div {
+        span {
+            right: 1px;
+        }
+
+        label {
+            left: 1px;
+        }
+    }
+
+    .form_container div:nth-child(3) label {
+        left: 20px!important;
+    }
+}
+
