@@ -34,7 +34,7 @@ const Navbar = () => {
         <>
             <header className="md:container" id="navbar">
                 <nav className={`${show ? "navbar_scroll" : ""} w-full`} >
-                    <div className="navbar_logo-container px-24">
+                    <div className="navbar_logo-container">
                         <div className="logo_container">
                             <a href="#navbar">
                                 <picture>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faBars} className="hamburger_menu" onClick={() => setOpen(!open)} /> 
                     </div>
 
-                    <div className={`${open ? "block" : "hidden"} navbar_list-container px-24`}>
+                    <div className={`${open ? "block" : "hidden"} navbar_list-container`}>
                         <ul className="flex w-full navbar_list">
                             <li>
                                 <Link activeClass="navbar_active" spy to="navbar" onClick={() => setOpen(!open)}>

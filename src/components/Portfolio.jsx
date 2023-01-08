@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import foto1 from "../assets/proyect-ecommerce2.jpeg";
+import foto1 from "../assets/proyect-ecommerce.jpeg";
 import foto2 from "../assets/proyect-asteroids.png";
 import foto3 from "../assets/proyecto-prodeconsa.jpeg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

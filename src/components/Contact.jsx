@@ -82,7 +82,7 @@ const Contact = () => {
                                 className={valueMail ? "has-value" : ""}>
                             </input>
                             <span><FontAwesomeIcon icon={faEnvelope} /></span>
-                            <label htmlFor="mail">E-mail</label>
+                            <label htmlFor="mail">{t("contact.emailInput")}</label>
                             <ValidationError
                                 prefix="Email"
                                 field="email"

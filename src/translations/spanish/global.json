@@ -42,10 +42,11 @@
     "contact": {
         "title": "Contacto",
         "description": "Siéntete libre de comunicarte conmigo y conversar sobre algún trabajo freelance, o en empresa, o simplemente..¡charlar! 😄",
-        "email": "Envíame un e-mail",
+        "email": "Envíame un correo",
         "linkedin": "Contáctame por LinkedIn",
         "github": "Sigueme en GitHub",
         "name": "Nombre",
+        "emailInput": "Correo",
         "message": "Mensaje",
         "send": "Enviar",
         "sent": "Enviado",
