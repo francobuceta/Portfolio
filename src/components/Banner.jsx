@@ -16,11 +16,11 @@ const Banner = () => {
                     <label htmlFor="banner_image-click">
                         <div className="banner_image">
 
-                            <div className="card__face card__face--front">
+                            <div className="card_face card_face--front">
                                 <img src={foto} alt="Foto personal" />
                             </div>
 
-                            <div className="card__face card__face--back">
+                            <div className="card_face card_face--back">
                                 <a href="https://www.linkedin.com/in/francobuceta/" target="_blank">
                                     <FontAwesomeIcon icon={faLinkedin} className="text-2xl text-secondary" />
                                     <span>francobuceta</span>

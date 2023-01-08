@@ -52,7 +52,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden hamburger_menu-container px-24">
-                        <FontAwesomeIcon icon={faBars} className="hamburger_menu" onClick={() => setOpen(!open)} />
+                        <FontAwesomeIcon icon={faBars} className="hamburger_menu" onClick={() => setOpen(!open)} /> 
                     </div>
 
                     <div className={`${open ? "block" : "hidden"} navbar_list-container px-24`}>

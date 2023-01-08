@@ -22,7 +22,7 @@
         transform-style: preserve-3d;
         cursor: pointer;
 
-        .card__face {
+        .card_face {
             position: absolute;
             top: 0;
             left: 0;
@@ -141,6 +141,12 @@
 }
 
 /* Media Queries */
+
+@media (max-width: 1000px) {
+    .box {
+        display: none;
+    }
+}
 
 @media (max-width: 900px) {
     .banner_container .banner_text-container {
