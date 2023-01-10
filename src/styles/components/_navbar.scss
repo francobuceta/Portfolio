@@ -199,3 +199,18 @@ header {
     }
 }
 
+@media (max-width: 318px) {
+    .navbar_logo-container {
+        width: 120px;
+        padding-left: 1rem;
+    }
+
+    .hamburger_menu-container {
+        padding-right: 1rem;
+
+        .hamburger_menu {
+            font-size: 1.7rem;
+        }
+    }
+}
+
