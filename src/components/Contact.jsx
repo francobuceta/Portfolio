@@ -35,7 +35,7 @@ const Contact = () => {
         <>
             <section className="container mx-auto px-16 mb-5 mobile_padding" id="contact">
                 <div className="about_title" id="title_contact">
-                    <h2 className='lg:mt-24 mt-10'>{t("contact.title")}</h2>
+                    <h2 className='lg:mt-24 mt-24'>{t("contact.title")}</h2>
                 </div>
 
                 <div className='flex justify-center items-center text-white font-poppins text-xl text-center mobile_padding' id="sub_contact">
