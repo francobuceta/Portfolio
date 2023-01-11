@@ -216,3 +216,10 @@ header {
     }
 }
 
+@media (max-width: 240px) {
+    .navbar_logo-container {
+        width: 7rem;
+        padding-left: 1rem;
+    }
+}
+
