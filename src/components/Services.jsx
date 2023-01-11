@@ -24,7 +24,7 @@ const Services = () => {
         <>
             <section className="container mx-auto px-16 mobile_padding" id="services">
                 <div className="about_title" id="title_services">
-                    <h2 className='lg:mt-24 mt-24'>{t("services.title")}</h2>
+                    <h2 className='mt-24'>{t("services.title")}</h2>
                 </div>
                 
                 <div className='flex justify-center items-center text-white font-poppins text-xl text-center' id="sub_services">

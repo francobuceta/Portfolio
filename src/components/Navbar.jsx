@@ -40,7 +40,7 @@ const Navbar = () => {
                                 <picture>
                                     <source media="(max-width:400px)" srcSet={logoSmall}/>
                                     <source media="(max-width:650px)" srcSet={show ? logoMobile2 : logoMobile}/>
-                                    <img src={show ? logo2 : logo} className="navbar_logo"></img>
+                                    <img src={show ? logo2 : logo} className="navbar_logo" alt="Logo Franco Buceta"></img>
                                 </picture>
                             </a>
                         </div>

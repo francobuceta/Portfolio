@@ -1,9 +1,11 @@
+/* Banner */
+
 .banner_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    perspective: 800px;
+    margin-top: 5rem;
+    perspective: 50rem;
     z-index: 1;
 
     #banner_image-click {
@@ -16,8 +18,8 @@
 
     .banner_image {
         position: relative;
-        width: 250px;
-        height: 250px;
+        width: 15.62rem;
+        height: 15.62rem;
         transition: 1s ease-in-out;
         transform-style: preserve-3d;
         cursor: pointer;
@@ -32,8 +34,8 @@
             img {
                 object-fit: cover;
                 border-radius: 100%;
-                width: 250px;
-                height: 250px;
+                width: 15.62rem;
+                height: 15.62rem;
             }
 
             &--back {
@@ -43,9 +45,9 @@
                 align-items: center;
                 flex-direction: column;
                 align-items: center;
-                gap: 10px;
-                width: 250px;
-                height: 250px;
+                gap: 0.62rem;
+                width: 15.62rem;
+                height: 15.62rem;
                 background-color: #dee2e5;
                 border-radius: 100%;
 
@@ -91,8 +93,8 @@
 
 .box ul li {
 	position: absolute;
-	width: 35px;
-	height: 35px;
+	width: 2.18rem;
+	height: 2.18rem;
 	opacity: 0;
 	background: radial-gradient($secondary, transparent, transparent);
 	bottom: 0;
@@ -156,7 +158,7 @@
 @media (max-width: 768px) {
     .banner_container {
         flex-direction:column-reverse;
-        gap: 50px;
+        gap: 3.12rem;
 
         .banner_text-container {
             padding: 6px;

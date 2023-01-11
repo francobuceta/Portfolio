@@ -1,9 +1,11 @@
+/* Portfolio */
+
 .portfolio_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    gap: 1.25rem;
+    margin-top: 3.12rem;
+    margin-bottom: 1.25rem;
     
     .portfolio__item {
         position: relative;
@@ -42,7 +44,7 @@
             padding: 50px;
             position: absolute;
             background-color: rgba(0, 0, 0, 0.7);
-            top: 300px;
+            top: 18.75rem;
             height: 100%;
             width: 100%;
             opacity: 0;
@@ -61,7 +63,7 @@
             }
 
             .portfolio__description-text {
-                margin: 20px 0;
+                margin: 1.25rem 0;
                 color: $white;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 700;
@@ -71,7 +73,7 @@
         .buttons__container {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 0.31rem;
 
             .button {
                 display: flex;
@@ -105,8 +107,8 @@
 @media (max-width: 1000px) {
     .portfolio_container {
         grid-template-columns: 1fr;
-        gap: 50px;
-        margin-top: 50px;
+        gap: 3.12rem;
+        margin-top: 3.12rem;
         margin-bottom: 0;
 
         .portfolio__item {
@@ -116,7 +118,7 @@
             }
 
             .buttons__container {
-                gap: 20px;
+                gap: 1.25rem;
                 margin: auto;
             }
         }
@@ -131,7 +133,7 @@
         }
 
         .buttons__container {
-            gap: 5px;
+            gap: 0.31rem;
             margin: initial;
         }
     }

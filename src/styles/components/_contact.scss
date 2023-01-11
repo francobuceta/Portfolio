@@ -1,8 +1,10 @@
+/* Contact */
+
 .contact_icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
     font-size: 4rem;
     transition: all 1.3s;
 
@@ -28,16 +30,16 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
 
     .arrow_up {
         display: flex;
         flex-direction: column;
         align-items: center;
         position: absolute;
-        right: 80px;
-        top: 250px;
+        right: 5rem;
+        top: 15.62rem;
         color: $primary;
         font-size: 3.5rem;
 
@@ -50,8 +52,8 @@
     }
 
     .form {
-        width: 500px;
-        height: 450px;
+        width: 31.25rem;
+        height: 28.12rem;
         padding: 50px;
         border-radius: 10px;
         border: 3px solid $grey-light;
@@ -62,8 +64,8 @@
             position: relative;
 
             span {
-                right: 70px;
-                font-size: 20px;
+                right: 4.37rem;
+                font-size: 1.25rem;
                 position: absolute;
                 top: 39%;
                 pointer-events: none;
@@ -75,8 +77,8 @@
 
             input,
             textarea {
-                height: 56px;
-                width: 290px;
+                height: 3.5rem;
+                width: 18.12rem;
                 margin-bottom: 20px;
                 padding-left: 16px;
                 border: 2px solid $grey-light;
@@ -84,7 +86,7 @@
                 outline: none;
                 background: $dark;
                 color: $white;
-                font-size: 16px;
+                font-size: 1rem;
 
                 &:focus {
                     border-color: $primary;
@@ -92,7 +94,7 @@
             }
 
             textarea {
-                height: 130px;
+                height: 8.12rem;
                 padding: 16px 0 0 16px;
             }
 
@@ -102,7 +104,7 @@
                 pointer-events: none;
                 color: $grey-light;
                 transition: 0.3s;
-                left: 70px;
+                left: 4.37rem;
                 translate: 0 -50%;
                 padding: 4px 8px;
                 font-family: "Poppins", sans-serif;
@@ -118,8 +120,8 @@
             display: flex;
             justify-content: center;
             margin: auto;
-            width: 150px;
-            height: 45px;
+            width: 9.37rem;
+            height: 2.8rem;
             font-family: "Poppins", sans-serif;
             font-weight: 900;
             color: $white;
@@ -168,14 +170,14 @@
 
 @media (max-width: 1200px) {
     .form_container .arrow_up {
-        right: 20px;
+        right: 1.25rem;
     }
 }
 
 @media (max-width: 900px) {
     .form_container .arrow_up {
-        right: -70px;
-        top: 250px;
+        right: -4.37rem;
+        top: 15.62rem;
         font-size: 2.5rem;
 
         span {
@@ -186,7 +188,7 @@
 
 @media (max-width: 795px) {
     .form_container .arrow_up {
-        right: 5px;
+        right: 0.313rem;
 
         span {
             font-size: 0.9rem;
@@ -196,7 +198,7 @@
 
 @media (max-width: 750px) {
     .contact_icons {
-        gap: 5px;
+        gap: 0.31rem;
         font-size: 3.5rem;
 
         a {
@@ -214,7 +216,7 @@
     
         .arrow_up {
             position: initial;
-            margin-top: 20px;
+            margin-top: 1.25rem;
             
             span {
                 font-size: 1.3rem;
@@ -223,29 +225,29 @@
 
         .form {
             width: auto;
-            height: 550px;
+            height: 34.37rem;
             padding: 60px;
 
             div {
                 span {
-                    right: 15px;
+                    right: 0.93rem;
                     top: 35%;
                 }
 
                 input,
                 textarea {
-                width: 500px;
-                margin-bottom: 30px;
+                width: 31.25rem;
+                margin-bottom: 1.87rem;
                 }
 
                 textarea {
-                    height: 170px;
-                    margin-bottom: 40px;
+                    height: 10.62rem;
+                    margin-bottom: 2.5rem;
                 }
 
                 label {
                     top: 35%;
-                    left: 15px;
+                    left: 0.93rem;
                 }
             }
         }
@@ -258,7 +260,7 @@
 
 @media (max-width: 350px) {
     .contact_icons {
-        gap: 5px;
+        gap: 0.313rem;
         font-size: 3rem;
 
         span {
@@ -279,7 +281,7 @@
     }
 
     .form_container div:nth-child(3) label {
-        left: 20px!important;
+        left: 1.25rem!important;
     }
 }
 

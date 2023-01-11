@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPaperPlane, faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
-import ScrollReveal from 'scrollreveal';
 import { useForm, ValidationError } from '@formspree/react';
+import ScrollReveal from 'scrollreveal';
 
 const Contact = () => {
 
@@ -35,7 +35,7 @@ const Contact = () => {
         <>
             <section className="container mx-auto px-16 mb-5 mobile_padding" id="contact">
                 <div className="about_title" id="title_contact">
-                    <h2 className='lg:mt-24 mt-24'>{t("contact.title")}</h2>
+                    <h2 className='mt-24'>{t("contact.title")}</h2>
                 </div>
 
                 <div className='flex justify-center items-center text-white font-poppins text-xl text-center mobile_padding' id="sub_contact">
@@ -44,15 +44,15 @@ const Contact = () => {
 
                 <div className="flex justify-center mt-10 gap-11 mobile_padding">
                     <div className="contact_icons">
-                        <a href="mailto:francobuceta95@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /></a>
+                        <a href="mailto:francobuceta95@gmail.com" aria-label="Email" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /></a>
                         <span>{t("contact.email")}</span>
                     </div>
                     <div className="contact_icons">
-                        <a href="https://www.linkedin.com/in/francobuceta/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a href="https://www.linkedin.com/in/francobuceta/" aria-label="LinkeIn" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
                         <span>{t("contact.linkedin")}</span>
                     </div>
                     <div className="contact_icons">
-                        <a href="https://github.com/francobuceta" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://github.com/francobuceta" aria-label="Github" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
                         <span>{t("contact.github")}</span>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                 <div className="form_container">
 
                     <div className="arrow_up">
-                        <a href="#navbar">
+                        <a href="#navbar" aria-label="Arrow Up">
                             <FontAwesomeIcon icon={faArrowCircleUp} />
                         </a>
                         <span>{t("contact.arrow")}</span>
@@ -82,7 +82,7 @@ const Contact = () => {
                                 className={valueMail ? "has-value" : ""}>
                             </input>
                             <span><FontAwesomeIcon icon={faEnvelope} /></span>
-                            <label htmlFor="mail">{t("contact.emailInput")}</label>
+                            <label htmlFor="email">{t("contact.emailInput")}</label>
                             <ValidationError
                                 prefix="Email"
                                 field="email"

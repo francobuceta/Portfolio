@@ -1,8 +1,8 @@
-import foto from "../assets/foto.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import foto from "../assets/foto.jpg";
 
 const Banner = () => {
 
