@@ -2,7 +2,7 @@
 
 Deploy: [Sitio Web](https://francobuceta.netlify.app)
 
-![](https://media.giphy.com/media/qlA1M6qtqP9ghwH0Ys/giphy.gif)
+![](https://media.giphy.com/media/ngJyfYqUYPfV3IHxEn/giphy.gif)
 
 Este es mi portfolio personal hecho con React, en donde el usuario podrá conocer un poco sobre mí y las tecnologías que manejo; ver los servicios que ofrezco, 
 mis trabajos realizados y contactarme.
