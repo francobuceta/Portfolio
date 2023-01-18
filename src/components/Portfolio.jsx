@@ -67,7 +67,7 @@ const Portfolio = () => {
                             <div className="portfolio__description">
                                 <h3 className="portfolio__description-title">Asteroids Game</h3>
                                 <p className="portfolio__description-text">
-                                    Vanilla Js, P5.js, HTML5, CSS3
+                                    JavaScript, P5.js, HTML5, CSS3
                                 </p>
                                 <div className="buttons__container">
                                     <a className="button" href="https://asteroids-atari.netlify.app/" aria-label="Sitio 2" target="_blank">
