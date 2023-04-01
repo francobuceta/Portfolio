@@ -7,10 +7,55 @@ import ScrollReveal from 'scrollreveal';
 import ecommerce from "../assets/proyect-ecommerce.jpeg";
 import asteroids from "../assets/proyect-asteroids.png";
 import prodeconsa from "../assets/proyecto-prodeconsa.jpeg";
+import bright from "../assets/proyecto-bright.jpg";
+import boutique from "../assets/proyecto-boutique.jpeg";
 
 const Portfolio = () => {
 
     const [t] = useTranslation("global");
+
+    const projects = [
+        {
+            id: "1",
+            title: "E-commerce",
+            description: "React, Firebase, Bootstrap, AOS",
+            image: ecommerce,
+            deployLink: "https://pickandroll.netlify.app/",
+            repositoryLink: "https://github.com/francobuceta/Ecommerce-React"
+        },
+        {
+            id: "2",
+            title: "Asteroids Game",
+            description: "JavaScript, P5.js, HTML5, CSS3",
+            image: asteroids,
+            deployLink: "https://asteroids-atari.netlify.app/",
+            repositoryLink: "https://github.com/francobuceta/Asteroids"
+        },
+        {
+            id: "3",
+            title: "A&M Prodeconsa",
+            description: "Landing Page: HTML5, CSS3, JavaScript",
+            image: prodeconsa,
+            deployLink: "https://amprodeconsa.com/index.html",
+            repositoryLink: "https://github.com/francobuceta/Prodeconsa-SA"
+        },
+        {
+            id: "4",
+            title: "Bright English",
+            description: "React, Bootstrap, Redux, Axios",
+            image: bright,
+            deployLink: "https://bright-english.vercel.app/",
+            repositoryLink: "https://github.com/No-Country/C9-26-Java-React"
+        },
+        {
+            id: "5",
+            title: "Custom Boutique",
+            description: "Landing Page: React, Tailwind, Axios",
+            image: boutique,
+            deployLink: "https://customboutique.com.ar/",
+            repositoryLink: "https://github.com/francobuceta/Custom-Boutique"
+        }
+    ]
 
     useEffect(() => {
         ScrollReveal().reveal('#title_portfolio', {
@@ -36,77 +81,35 @@ const Portfolio = () => {
                 </div>
 
                 <div className="portfolio_container">
-                    <div className="portfolio__item">
-                        <picture>
-                            <source type="image/jpeg" srcSet={ecommerce}></source>
-                            <img className="portfolio__img" alt="Portfolio item - Ecommerce"></img>
-                        </picture>
-                            <div className="portfolio__description">
-                                <h3 className="portfolio__description-title">E-Commerce</h3>
-                                <p className="portfolio__description-text">
-                                    React, Firebase, Bootstrap, AOS
-                                </p>
-                                <div className="buttons__container">
-                                    <a className="button" href="https://pickandroll.netlify.app/" aria-label="Sitio 1" target="_blank">
-                                        <FontAwesomeIcon icon={faEarthAmerica} />
-                                        <span>{t("portfolio.website")}</span>
-                                    </a>
-                                    <a className="button" href="https://github.com/francobuceta/Ecommerce-React" aria-label="Repo 1" target="_blank">
-                                        <FontAwesomeIcon icon={faGithub} />
-                                        <span>{t("portfolio.repository")}</span>
-                                    </a>
+                    {
+                        projects.map(project => {
+                            return (
+                                <div className="portfolio__item">
+                                    <picture>
+                                        <source type="image/jpeg" srcSet={project.image}></source>
+                                        <img className="portfolio__img" alt={`Portfolio item - ${project.title}`}></img>
+                                    </picture>
+                                    <div className="portfolio__description">
+                                        <h3 className="portfolio__description-title">{project.title}</h3>
+                                        <p className="portfolio__description-text">
+                                            {project.description}
+                                        </p>
+                                        <div className="buttons__container">
+                                            <a className="button" href={project.deployLink} aria-label={project.id} target="_blank">
+                                                <FontAwesomeIcon icon={faEarthAmerica} />
+                                                <span>{t("portfolio.website")}</span>
+                                            </a>
+                                            <a className="button" href={project.repositoryLink} aria-label={project.id} target="_blank">
+                                                <FontAwesomeIcon icon={faGithub} />
+                                                <span>{t("portfolio.repository")}</span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                    </div>
-
-                    <div className="portfolio__item">
-                        <picture>
-                            <source type="image/jpeg" srcSet={asteroids}></source>
-                            <img className="portfolio__img" alt="Portfolio item - Asteroids"></img>
-                        </picture>
-                            <div className="portfolio__description">
-                                <h3 className="portfolio__description-title">Asteroids Game</h3>
-                                <p className="portfolio__description-text">
-                                    JavaScript, P5.js, HTML5, CSS3
-                                </p>
-                                <div className="buttons__container">
-                                    <a className="button" href="https://asteroids-atari.netlify.app/" aria-label="Sitio 2" target="_blank">
-                                        <FontAwesomeIcon icon={faEarthAmerica} />
-                                        <span>{t("portfolio.website")}</span>
-                                    </a>
-                                    <a className="button" href="https://github.com/francobuceta/Asteroids" aria-label="Repo 2" target="_blank">
-                                        <FontAwesomeIcon icon={faGithub} />
-                                        <span>{t("portfolio.repository")}</span>
-                                    </a>
-                                </div>
-                            </div>
-                    </div>
-
-                    <div className="portfolio__item">
-                        <picture>
-                            <source type="image/jpeg" srcSet={prodeconsa}></source>
-                            <img className="portfolio__img" alt="Portfolio item - Landing Page"></img>
-                        </picture>
-                            <div className="portfolio__description">
-                                <h3 className="portfolio__description-title">A&M Prodeconsa</h3>
-                                <p className="portfolio__description-text">
-                                    Landing Page: HTML5, CSS3, JavaScript
-                                </p>
-                                <div className="buttons__container">
-                                    <a className="button" href="https://amprodeconsa.com/index.html" aria-label="Sitio 3" target="_blank">
-                                        <FontAwesomeIcon icon={faEarthAmerica} />
-                                        <span>{t("portfolio.website")}</span>
-                                    </a>
-                                    <a className="button" href="https://github.com/francobuceta/Prodeconsa-SA" aria-label="Repo 3" target="_blank">
-                                        <FontAwesomeIcon icon={faGithub} />
-                                        <span>{t("portfolio.repository")}</span>
-                                    </a>
-                                </div>
-                            </div>
-                    </div>
+                            )
+                        })
+                    }
                 </div>
-
-                
             </section>
         </>
     )
