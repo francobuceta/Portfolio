@@ -84,7 +84,7 @@ const Portfolio = () => {
                     {
                         projects.map(project => {
                             return (
-                                <div className="portfolio__item">
+                                <div className="portfolio__item" key={project.id}>
                                     <picture>
                                         <source type="image/jpeg" srcSet={project.image}></source>
                                         <img className="portfolio__img" alt={`Portfolio item - ${project.title}`}></img>

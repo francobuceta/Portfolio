@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPaperPlane, faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import ScrollReveal from 'scrollreveal';
 
 const Contact = () => {
@@ -70,7 +70,8 @@ const Contact = () => {
                         <div>
                             <input id="name" type="text" name="Nombre"
                                 onChange={e => setValueName(e.target.value)}
-                                className={valueName ? "has-value" : ""}>
+                                className={valueName ? "has-value" : ""}
+                                required>
                             </input>
                             <span><FontAwesomeIcon icon={faUser} /></span>
                             <label htmlFor="name">{t("contact.name")}</label>
@@ -79,21 +80,19 @@ const Contact = () => {
                         <div>
                             <input id="email" type="email" name="Email"
                                 onChange={e => setValueMail(e.target.value)}
-                                className={valueMail ? "has-value" : ""}>
+                                className={valueMail ? "has-value" : ""}
+                                required>
                             </input>
                             <span><FontAwesomeIcon icon={faEnvelope} /></span>
                             <label htmlFor="email">{t("contact.emailInput")}</label>
-                            <ValidationError
-                                prefix="Email"
-                                field="email"
-                                errors={state.errors}
-                            />
+                            
                         </div>
 
                         <div>
                             <textarea id="text" name="Mensaje"
                                 onChange={e => setValueMessage(e.target.value)}
-                                className={valueMessage ? "has-value" : ""}>
+                                className={valueMessage ? "has-value" : ""}
+                                required>
                             </textarea>
                             <label htmlFor="text" className="text_label">{t("contact.message")}</label>
                         </div>
@@ -104,10 +103,15 @@ const Contact = () => {
                                 <input id="submitted" type="submit" value={t("contact.sent")} disabled={state.submitting}></input>
                                 <p className="message_sent">{t("contact.gratitude")}</p>
                             </div>
+
+                            : state.errors.length > 0 ? 
+                                <>
+                                    <input id="submit" type="submit" value={t("contact.send")} disabled={state.submitting}></input>
+                                    <p className="text-red-600 font-bold text-xl mt-2">Email inválido</p>
+                                </>
                             
                             : <input id="submit" type="submit" value={t("contact.send")} disabled={state.submitting}></input>
                         }
-                        
                     </form>
                 </div>
             </section>
