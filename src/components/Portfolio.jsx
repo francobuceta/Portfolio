@@ -17,8 +17,8 @@ const Portfolio = () => {
     const projects = [
         {
             id: "1",
-            title: "E-commerce",
-            description: "React, Firebase, Bootstrap, AOS",
+            title: "Pick & Roll",
+            description: "E-commerce: React, Firebase, Bootstrap, AOS",
             image: ecommerce,
             deployLink: "https://pickandroll.netlify.app/",
             repositoryLink: "https://github.com/francobuceta/Ecommerce-React"
@@ -42,7 +42,7 @@ const Portfolio = () => {
         {
             id: "4",
             title: "Bright English",
-            description: "React, Bootstrap, Redux, Axios",
+            description: "WebApp: React, Bootstrap, Redux, Axios",
             image: bright,
             deployLink: "https://bright-english.vercel.app/",
             repositoryLink: "https://github.com/No-Country/C9-26-Java-React"
