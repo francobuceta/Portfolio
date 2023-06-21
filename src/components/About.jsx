@@ -14,7 +14,27 @@ const About = () => {
         {
             icon: ImHtmlFive,
             text: "HTML"
-        }
+        },
+        {
+            icon: ImHtmlFive,
+            text: "HTML"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "HTML"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "HTML"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "HTML"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "HTML"
+        },
     ]
 
     useEffect(() => {
