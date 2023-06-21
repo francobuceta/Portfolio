@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faSass, faBootstrap, faReact, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
-import pdf from "../assets/cv.pdf"
-import ScrollReveal from 'scrollreveal';
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGithub, SiFirebase, SiNodedotjs, SiMongodb, SiExpress } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
+import pdf from "../assets/cv.pdf";
+import ScrollReveal from 'scrollreveal';
+
+
 
 const About = () => {
     const [t] = useTranslation("global");
