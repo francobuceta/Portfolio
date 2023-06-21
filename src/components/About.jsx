@@ -5,9 +5,17 @@ import { faDatabase, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import pdf from "../assets/cv.pdf"
 import ScrollReveal from 'scrollreveal';
+import { ImHtmlFive } from "react-icons/im"; 
 
 const About = () => {
     const [t] = useTranslation("global");
+
+    const technologies = [
+        {
+            icon: ImHtmlFive,
+            text: "HTML"
+        }
+    ]
 
     useEffect(() => {
         ScrollReveal().reveal('#title_about', {
@@ -45,7 +53,16 @@ const About = () => {
                             <h3 className='mb-5'>{t("about.skills")}</h3>
                         </div>
 
-                        <div className="skill_item">
+                        {
+                            technologies.map(elem => (
+                                <div className="skill_item" key={elem.text}>
+                                    {<elem.icon/>}
+                                    <span>{elem.text}</span>
+                                </div>
+                            ))
+                        }
+
+                        {/* <div className="skill_item">
                             <FontAwesomeIcon icon={faHtml5} />
                             <span>HTML</span>
                         </div>
@@ -80,7 +97,7 @@ const About = () => {
                         <div className="skill_item">
                             <FontAwesomeIcon icon={faDatabase} />
                             <span>FIREBASE</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
