@@ -17,23 +17,43 @@ const About = () => {
         },
         {
             icon: ImHtmlFive,
-            text: "HTML"
+            text: "CSS"
         },
         {
             icon: ImHtmlFive,
-            text: "HTML"
+            text: "SASS"
         },
         {
             icon: ImHtmlFive,
-            text: "HTML"
+            text: "JAVASCRIPT"
         },
         {
             icon: ImHtmlFive,
-            text: "HTML"
+            text: "REACT"
         },
         {
             icon: ImHtmlFive,
-            text: "HTML"
+            text: "GIT"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "GITHUB"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "FIREBASE"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "NODE JS"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "MONGO DB"
+        },
+        {
+            icon: ImHtmlFive,
+            text: "EXPRESS"
         },
     ]
 
