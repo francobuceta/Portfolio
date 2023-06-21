@@ -5,54 +5,55 @@ import { faDatabase, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import pdf from "../assets/cv.pdf"
 import ScrollReveal from 'scrollreveal';
-import { ImHtmlFive } from "react-icons/im"; 
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGithub, SiFirebase, SiNodedotjs, SiMongodb, SiExpress } from "react-icons/si";
+import { FaSass } from "react-icons/fa";
 
 const About = () => {
     const [t] = useTranslation("global");
 
     const technologies = [
         {
-            icon: ImHtmlFive,
+            icon: SiHtml5,
             text: "HTML"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiCss3,
             text: "CSS"
         },
         {
-            icon: ImHtmlFive,
+            icon: FaSass,
             text: "SASS"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiJavascript,
             text: "JAVASCRIPT"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiReact,
             text: "REACT"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiGit,
             text: "GIT"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiGithub,
             text: "GITHUB"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiFirebase,
             text: "FIREBASE"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiNodedotjs,
             text: "NODE JS"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiMongodb,
             text: "MONGO DB"
         },
         {
-            icon: ImHtmlFive,
+            icon: SiExpress,
             text: "EXPRESS"
         },
     ]
@@ -102,42 +103,6 @@ const About = () => {
                             ))
                         }
 
-                        {/* <div className="skill_item">
-                            <FontAwesomeIcon icon={faHtml5} />
-                            <span>HTML</span>
-                        </div>
-                        <div className="skill_item">
-                            <FontAwesomeIcon icon={faCss3Alt} />
-                            <span>CSS</span>
-                        </div>
-                        <div className="skill_item">
-                            <FontAwesomeIcon icon={faSass} />
-                            <span>SASS</span>
-                        </div>
-                        <div className="skill_item">
-                            <FontAwesomeIcon icon={faBootstrap} />
-                            <span>BOOTSTRAP</span>
-                        </div>
-                        <div className="skill_item">
-                            <FontAwesomeIcon icon={faJs} />
-                            <span>JAVASCRIPT</span>
-                        </div>
-                        <div className="skill_item">
-                            <FontAwesomeIcon icon={faReact} />
-                            <span>REACT</span>
-                        </div>
-                        <div className="skill_item">
-                            <FontAwesomeIcon icon={faGitAlt} />
-                            <span>GIT</span>
-                        </div>
-                        <div className="skill_item">
-                            <FontAwesomeIcon icon={faGithub} />
-                            <span>GITHUB</span>
-                        </div>
-                        <div className="skill_item">
-                            <FontAwesomeIcon icon={faDatabase} />
-                            <span>FIREBASE</span>
-                        </div> */}
                     </div>
                 </div>
             </section>
