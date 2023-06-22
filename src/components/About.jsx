@@ -1,63 +1,13 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { technologies } from '../utils/skillsData/skills';
 import { useTranslation } from 'react-i18next';
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGithub, SiFirebase, SiNodedotjs, SiMongodb, SiExpress } from "react-icons/si";
-import { FaSass } from "react-icons/fa";
 import pdf from "../assets/cv.pdf";
 import ScrollReveal from 'scrollreveal';
 
-
-
 const About = () => {
     const [t] = useTranslation("global");
-
-    const technologies = [
-        {
-            icon: SiHtml5,
-            text: "HTML"
-        },
-        {
-            icon: SiCss3,
-            text: "CSS"
-        },
-        {
-            icon: FaSass,
-            text: "SASS"
-        },
-        {
-            icon: SiJavascript,
-            text: "JAVASCRIPT"
-        },
-        {
-            icon: SiReact,
-            text: "REACT"
-        },
-        {
-            icon: SiGit,
-            text: "GIT"
-        },
-        {
-            icon: SiGithub,
-            text: "GITHUB"
-        },
-        {
-            icon: SiFirebase,
-            text: "FIREBASE"
-        },
-        {
-            icon: SiNodedotjs,
-            text: "NODE JS"
-        },
-        {
-            icon: SiMongodb,
-            text: "MONGO DB"
-        },
-        {
-            icon: SiExpress,
-            text: "EXPRESS"
-        },
-    ]
 
     useEffect(() => {
         ScrollReveal().reveal('#title_about', {
