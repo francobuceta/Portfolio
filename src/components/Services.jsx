@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobileScreenButton, faPalette, faCode, faCartShopping, faGaugeHigh, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import ServicesData from "../utils/servicesData/services";
 import ScrollReveal from 'scrollreveal';
 
 const Services = () => {
 
     const [t] = useTranslation("global");
+    const services = ServicesData();
 
     useEffect(() => {
         ScrollReveal().reveal('#title_services', {
@@ -26,54 +27,25 @@ const Services = () => {
                 <div className="about_title" id="title_services">
                     <h2 className='mt-24'>{t("services.title")}</h2>
                 </div>
-                
+
                 <div className='flex justify-center items-center text-white font-poppins text-xl text-center' id="sub_services">
                     <h3>{t("services.description")}</h3>
                 </div>
-                
+
                 <div className="services_container">
-                    <div className="services_item">
-                        <div>
-                            <FontAwesomeIcon icon={faMobileScreenButton} />
-                        </div>
-                        <h4>{t("services.mobile-title")}</h4>
-                        <p>{t("services.mobile")}</p>
-                    </div>
-                    <div className="services_item">
-                        <div>
-                            <FontAwesomeIcon icon={faPalette} />
-                        </div>
-                        <h4>{t("services.design-title")}</h4>
-                        <p>{t("services.design")}</p>
-                    </div>
-                    <div className="services_item">
-                        <div>
-                            <FontAwesomeIcon icon={faCode} />
-                        </div>
-                        <h4>{t("services.develop-title")}</h4>
-                        <p>{t("services.develop")}</p>
-                    </div>
-                    <div className="services_item">
-                        <div>
-                            <FontAwesomeIcon icon={faCartShopping} />
-                        </div>
-                        <h4>{t("services.ecommerce-title")}</h4>
-                        <p>{t("services.ecommerce")}</p>
-                    </div>
-                    <div className="services_item">
-                        <div>
-                            <FontAwesomeIcon icon={faGaugeHigh} />
-                        </div>
-                        <h4>{t("services.performance-title")}</h4>
-                        <p>{t("services.performance")}</p>
-                    </div>
-                    <div className="services_item">
-                        <div>
-                            <FontAwesomeIcon icon={faScrewdriverWrench} />
-                        </div>
-                        <h4>SEO</h4>
-                        <p>{t("services.seo")}</p>
-                    </div>
+                    {
+                        services.map(elem => {
+                            return (
+                                <div className="services_item" key={elem.title}>
+                                    <div>
+                                        <FontAwesomeIcon icon={elem.icon} />
+                                    </div>
+                                    <h4>{elem.title}</h4>
+                                    <p>{elem.text}</p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
 
             </section>
