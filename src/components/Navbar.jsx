@@ -83,7 +83,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <div className="hidden mobile_flags flex gap-3 mb-3">
+                                <div className="hidden mobile_flags gap-3 mb-3">
                                     <img src={spain} alt="Bandera de España" onClick={() => i18n.changeLanguage("es")} />
                                     <img src={usa} alt="Bandera de Estados Unidos" onClick={() => i18n.changeLanguage("en")} />
                                 </div>
