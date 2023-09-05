@@ -4,6 +4,7 @@ import prodeconsa from "../../assets/proyecto-prodeconsa.jpeg";
 import bright from "../../assets/proyecto-bright.jpg";
 import boutique from "../../assets/proyecto-boutique.jpeg";
 import meli from "../../assets/meli.jpeg";
+import agape from "../../assets/proyecto-agape.png";
 
 export const projects = [
     {
@@ -40,6 +41,14 @@ export const projects = [
     },
     {
         id: "5",
+        title: "Ágape Libros",
+        description: "E-commerce: React, Material UI, Redux Toolkit",
+        image: agape,
+        deployLink: "https://agape-libros.com.ar/",
+        repositoryLink: ""
+    },
+    {
+        id: "6",
         title: "Asteroids Game",
         description: "JavaScript, P5.js, HTML5, CSS3",
         image: asteroids,
@@ -47,7 +56,7 @@ export const projects = [
         repositoryLink: "https://github.com/francobuceta/Asteroids"
     },
     {
-        id: "6",
+        id: "7",
         title: "Bright English",
         description: "WebApp: React, Bootstrap, Redux Toolkit, Axios",
         image: bright,

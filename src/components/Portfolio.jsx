@@ -52,10 +52,13 @@ const Portfolio = () => {
                                                 <FontAwesomeIcon icon={faEarthAmerica} />
                                                 <span>{t("portfolio.website")}</span>
                                             </a>
-                                            <a className="button" href={project.repositoryLink} aria-label={project.id} target="_blank">
-                                                <FontAwesomeIcon icon={faGithub} />
-                                                <span>{t("portfolio.repository")}</span>
-                                            </a>
+                                            {
+                                                project.repositoryLink !== "" &&
+                                                <a className="button" href={project.repositoryLink} aria-label={project.id} target="_blank">
+                                                    <FontAwesomeIcon icon={faGithub} />
+                                                    <span>{t("portfolio.repository")}</span>
+                                                </a>
+                                            }
                                         </div>
                                     </div>
                                 </div>
