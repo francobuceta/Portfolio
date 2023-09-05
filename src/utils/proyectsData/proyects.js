@@ -20,7 +20,7 @@ export const projects = [
         title: "Mercado Libre Clone",
         description: "WebApp: React, Tailwind, Redux Toolkit, ChatGPT",
         image: meli,
-        deployLink: "https://mercadolibre-s8-08.netlify.app/",
+        deployLink: "https://meli-clone-seven.vercel.app/",
         repositoryLink: "https://github.com/No-Country/s8-08-t-java-react-mercadolibre"
     },
     {
