@@ -5,6 +5,7 @@ import bright from "../../assets/proyecto-bright.jpg";
 import boutique from "../../assets/proyecto-boutique.jpeg";
 import meli from "../../assets/meli.jpeg";
 import agape from "../../assets/proyecto-agape.png";
+import vipAgro from "../../assets/proyecto-vipagro.png";
 
 export const projects = [
     {
@@ -25,22 +26,6 @@ export const projects = [
     },
     {
         id: "3",
-        title: "A&M Prodeconsa",
-        description: "Landing Page: HTML5, CSS3, JavaScript",
-        image: prodeconsa,
-        deployLink: "https://amprodeconsa.com/index.html",
-        repositoryLink: "https://github.com/francobuceta/Prodeconsa-SA"
-    },
-    {
-        id: "4",
-        title: "Custom Boutique",
-        description: "Landing Page: React, Tailwind, Axios",
-        image: boutique,
-        deployLink: "https://customboutique.com.ar/",
-        repositoryLink: "https://github.com/francobuceta/Custom-Boutique"
-    },
-    {
-        id: "5",
         title: "Ágape Libros",
         description: "E-commerce: React, Material UI, Redux Toolkit",
         image: agape,
@@ -48,7 +33,31 @@ export const projects = [
         repositoryLink: ""
     },
     {
+        id: "4",
+        title: "Vip Agro",
+        description: "WebApp: Bubble.io",
+        image: vipAgro,
+        deployLink: "https://vipagro.com.ar/",
+        repositoryLink: ""
+    },
+    {
+        id: "5",
+        title: "A&M Prodeconsa",
+        description: "Landing Page: HTML5, CSS3, JavaScript",
+        image: prodeconsa,
+        deployLink: "https://amprodeconsa.com/index.html",
+        repositoryLink: "https://github.com/francobuceta/Prodeconsa-SA"
+    },
+    {
         id: "6",
+        title: "Custom Boutique",
+        description: "Landing Page: React, Tailwind, Axios",
+        image: boutique,
+        deployLink: "https://customboutique.com.ar/",
+        repositoryLink: "https://github.com/francobuceta/Custom-Boutique"
+    },
+    {
+        id: "7",
         title: "Asteroids Game",
         description: "JavaScript, P5.js, HTML5, CSS3",
         image: asteroids,
@@ -56,7 +65,7 @@ export const projects = [
         repositoryLink: "https://github.com/francobuceta/Asteroids"
     },
     {
-        id: "7",
+        id: "8",
         title: "Bright English",
         description: "WebApp: React, Bootstrap, Redux Toolkit, Axios",
         image: bright,
