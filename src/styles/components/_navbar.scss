@@ -13,6 +13,28 @@ body {
     height: 100vh;
 }
 
+/* ScrollBar */
+body {
+    --sb-track-color: rgb(53, 50, 50);
+    --sb-thumb-color: #4cb1f6;
+    --sb-size: 10px;
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar, .scrollBar::-webkit-scrollbar {
+    width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track, .scrollBar::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb, .scrollBar::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+}
+
 /* Navbar */
 
 header {
