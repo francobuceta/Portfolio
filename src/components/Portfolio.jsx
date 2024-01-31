@@ -56,7 +56,14 @@ const Portfolio = () => {
                                                 project.repositoryLink !== "" &&
                                                 <a className="button" href={project.repositoryLink} aria-label={project.id} target="_blank">
                                                     <FontAwesomeIcon icon={faGithub} />
-                                                    <span>{t("portfolio.repository")}</span>
+                                                    <span>{project.repositoryLink2 ? "Frontend" :  t("portfolio.repository")}</span>
+                                                </a>
+                                            }
+                                            {
+                                                project.repositoryLink2 &&
+                                                <a className="button" href={project.repositoryLink2} aria-label={project.id} target="_blank">
+                                                    <FontAwesomeIcon icon={faGithub} />
+                                                    <span>Backend</span>
                                                 </a>
                                             }
                                         </div>
