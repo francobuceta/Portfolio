@@ -6,8 +6,18 @@ import boutique from "../../assets/proyecto-boutique.jpeg";
 import meli from "../../assets/meli.jpeg";
 import agape from "../../assets/proyecto-agape.png";
 import vipAgro from "../../assets/proyecto-vipagro.png";
+import cyberCube from "../../assets/proyecto-cyberCube.png";
 
 export const projects = [
+    {
+        id: "9",
+        title: "Cyber Cube",
+        description: "E-commerce: Next 13, Tailwind, Stripe, Redux Toolkit, Nodejs, Express, MongoDB",
+        image: cyberCube,
+        deployLink: "https://ecommerce-next-js-ebon.vercel.app/",
+        repositoryLink: "https://github.com/francobuceta/Ecommerce-Next.js",
+        repositoryLink2: "https://github.com/francobuceta/Backend-Nodejs"
+    },
     {
         id: "1",
         title: "Pick & Roll",
@@ -17,20 +27,20 @@ export const projects = [
         repositoryLink: "https://github.com/francobuceta/Ecommerce-React"
     },
     {
-        id: "2",
-        title: "Mercado Libre Clone",
-        description: "WebApp: React, Tailwind, Redux Toolkit, ChatGPT",
-        image: meli,
-        deployLink: "https://meli-clone-seven.vercel.app/",
-        repositoryLink: "https://github.com/No-Country/s8-08-t-java-react-mercadolibre"
-    },
-    {
         id: "3",
         title: "Ágape Libros",
         description: "E-commerce: React, Material UI, Redux Toolkit",
         image: agape,
         deployLink: "https://agape-libros.com.ar/",
         repositoryLink: ""
+    },
+    {
+        id: "2",
+        title: "Mercado Libre Clone",
+        description: "WebApp: React, Tailwind, Redux Toolkit, ChatGPT",
+        image: meli,
+        deployLink: "https://meli-clone-seven.vercel.app/",
+        repositoryLink: "https://github.com/No-Country/s8-08-t-java-react-mercadolibre"
     },
     {
         id: "4",
