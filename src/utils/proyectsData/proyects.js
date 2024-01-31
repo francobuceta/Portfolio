@@ -16,7 +16,8 @@ export const projects = [
         image: cyberCube,
         deployLink: "https://ecommerce-next-js-ebon.vercel.app/",
         repositoryLink: "https://github.com/francobuceta/Ecommerce-Next.js",
-        repositoryLink2: "https://github.com/francobuceta/Backend-Nodejs"
+        repositoryLink2: "https://github.com/francobuceta/Backend-Nodejs",
+        type: "education"
     },
     {
         id: "1",
@@ -24,7 +25,8 @@ export const projects = [
         description: "E-commerce: React, Firebase, Bootstrap, AOS",
         image: ecommerce,
         deployLink: "https://pickandroll.netlify.app/",
-        repositoryLink: "https://github.com/francobuceta/Ecommerce-React"
+        repositoryLink: "https://github.com/francobuceta/Ecommerce-React",
+        type: "education"
     },
     {
         id: "3",
@@ -32,7 +34,8 @@ export const projects = [
         description: "E-commerce: React, Material UI, Redux Toolkit",
         image: agape,
         deployLink: "https://agape-libros.com.ar/",
-        repositoryLink: ""
+        repositoryLink: "",
+        type: "work"
     },
     {
         id: "2",
@@ -40,7 +43,8 @@ export const projects = [
         description: "WebApp: React, Tailwind, Redux Toolkit, ChatGPT",
         image: meli,
         deployLink: "https://meli-clone-seven.vercel.app/",
-        repositoryLink: "https://github.com/No-Country/s8-08-t-java-react-mercadolibre"
+        repositoryLink: "https://github.com/No-Country/s8-08-t-java-react-mercadolibre",
+        type: "education"
     },
     {
         id: "4",
@@ -48,7 +52,8 @@ export const projects = [
         description: "WebApp: Bubble.io",
         image: vipAgro,
         deployLink: "https://vipagro.com.ar/",
-        repositoryLink: ""
+        repositoryLink: "",
+        type: "work"
     },
     {
         id: "5",
@@ -56,7 +61,8 @@ export const projects = [
         description: "Landing Page: HTML5, CSS3, JavaScript",
         image: prodeconsa,
         deployLink: "https://amprodeconsa.com/index.html",
-        repositoryLink: "https://github.com/francobuceta/Prodeconsa-SA"
+        repositoryLink: "https://github.com/francobuceta/Prodeconsa-SA",
+        type: "work"
     },
     {
         id: "6",
@@ -64,7 +70,8 @@ export const projects = [
         description: "Landing Page: React, Tailwind, Axios",
         image: boutique,
         deployLink: "https://customboutique.com.ar/",
-        repositoryLink: "https://github.com/francobuceta/Custom-Boutique"
+        repositoryLink: "https://github.com/francobuceta/Custom-Boutique",
+        type: "work"
     },
     {
         id: "7",
@@ -72,7 +79,8 @@ export const projects = [
         description: "JavaScript, P5.js, HTML5, CSS3",
         image: asteroids,
         deployLink: "https://asteroids-atari.netlify.app/",
-        repositoryLink: "https://github.com/francobuceta/Asteroids"
+        repositoryLink: "https://github.com/francobuceta/Asteroids",
+        type: "education"
     },
     {
         id: "8",
@@ -80,6 +88,7 @@ export const projects = [
         description: "WebApp: React, Bootstrap, Redux Toolkit, Axios",
         image: bright,
         deployLink: "https://bright-english.vercel.app/",
-        repositoryLink: "https://github.com/No-Country/C9-26-Java-React"
+        repositoryLink: "https://github.com/No-Country/C9-26-Java-React",
+        type: "education"
     }
 ]

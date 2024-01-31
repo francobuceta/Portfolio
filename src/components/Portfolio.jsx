@@ -38,6 +38,9 @@ const Portfolio = () => {
                         projects.map(project => {
                             return (
                                 <div className="portfolio__item" key={project.id}>
+                                    <div className="absolute top-2 left-2 bg-primary p-2 font-bold font-poppins rounded-md">
+                                        {project.type === "education" ? t("portfolio.typeEducation") : t("portfolio.typeWork")}
+                                    </div>
                                     <picture>
                                         <source type="image/jpeg" srcSet={project.image}></source>
                                         <img className="portfolio__img" alt={`Portfolio item - ${project.title}`}></img>

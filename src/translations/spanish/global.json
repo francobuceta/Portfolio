@@ -22,7 +22,9 @@
     "portfolio": {
         "title": "Algunos de mis proyectos más destacados hasta el momento.",
         "website": "Sitio Web",
-        "repository": "Repositorio"
+        "repository": "Repositorio",
+        "typeWork": "Trabajo",
+        "typeEducation": "Educación"
     },
     "services": {
         "title": "Servicios",

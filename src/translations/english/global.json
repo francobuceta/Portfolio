@@ -22,7 +22,9 @@
     "portfolio": {
         "title": "Some of my most outstanding projects so far.",
         "website": "Website",
-        "repository": "Repository"
+        "repository": "Repository",
+        "typeWork": "Work",
+        "typeEducation": "Education"
     },
     "services": {
         "title": "Services",
