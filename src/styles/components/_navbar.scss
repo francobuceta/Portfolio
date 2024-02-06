@@ -17,11 +17,11 @@
         background: #4cb1f6;
         border-radius: 10px;
     }
+}
 
-    @-moz-document url-prefix() {
-        {
-            scrollbar-color: #4cb1f6 rgb(53, 50, 50);
-        }
+@-moz-document url-prefix() {
+    * {
+        scrollbar-color: #4cb1f6 rgb(53, 50, 50);
     }
 }
 
