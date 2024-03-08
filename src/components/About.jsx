@@ -3,11 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { technologies } from '../utils/skillsData/skills';
 import { useTranslation } from 'react-i18next';
-import pdf from "../assets/cv.pdf";
+import i18n from 'i18next';
+import spanishPdf from "../assets/cv.pdf";
+import englishPdf from "../assets/resume.pdf";
 import ScrollReveal from 'scrollreveal';
 
 const About = () => {
     const [t] = useTranslation("global");
+    const currentLenguage = i18n.language;
 
     useEffect(() => {
         ScrollReveal().reveal('#title_about', {
@@ -32,7 +35,9 @@ const About = () => {
                         <p className="mt-5">{t("about.description2")}</p>
                         <div>
                             <button>
-                                <a href={pdf} download="Franco Buceta-CV">
+                                <a href={currentLenguage === "en" ? englishPdf : spanishPdf} 
+                                    download={currentLenguage === "en" ? "Franco Buceta-Resume" : "Franco Buceta-CV"}
+                                >
                                     <FontAwesomeIcon icon={faFileDownload} />
                                     <span>{t("about.download")}</span>
                                 </a>
