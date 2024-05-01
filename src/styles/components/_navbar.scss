@@ -71,16 +71,16 @@ header {
     align-items: center;
     gap: 1.87rem;
     padding-left: 6rem;
-    margin-top: 0.18rem;
-    margin-bottom: 0.18rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
 
     .logo_container {
         width: auto;
         height: auto;
 
         .navbar_logo {
-            width: 15.62rem;
-            height: 6rem;
+            width: 100%;
+            height: auto;
             object-fit: contain;
         }
     }
