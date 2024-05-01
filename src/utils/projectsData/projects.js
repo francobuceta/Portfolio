@@ -6,7 +6,7 @@ import meli from "../../assets/meli.jpeg";
 import agape from "../../assets/proyecto-agape.png";
 import vipAgro from "../../assets/proyecto-vipagro.png";
 import cyberCube from "../../assets/proyecto-cyberCube.png";
-import buscoCampo from "../../assets/proyecto-buscoCampo.png";
+import buscoCampo from "../../assets/proyecto-buscocampo.png";
 
 export const projects = [
     {
