@@ -2,13 +2,22 @@ import ecommerce from "../../assets/proyect-ecommerce.jpeg";
 import asteroids from "../../assets/proyect-asteroids.png";
 import prodeconsa from "../../assets/proyecto-prodeconsa.jpeg";
 import bright from "../../assets/proyecto-bright.jpg";
-import boutique from "../../assets/proyecto-boutique.jpeg";
 import meli from "../../assets/meli.jpeg";
 import agape from "../../assets/proyecto-agape.png";
 import vipAgro from "../../assets/proyecto-vipagro.png";
 import cyberCube from "../../assets/proyecto-cyberCube.png";
+import buscoCampo from "../../assets/proyecto-buscoCampo.png";
 
 export const projects = [
+    {
+        id: "6",
+        title: "BUSCOCAMPO",
+        description: "WebApp: React, Tailwind, Redux Toolkit, Nodejs, Express, MongoDB",
+        image: buscoCampo,
+        deployLink: "https://www.buscocampo.com/",
+        repositoryLink: "",
+        type: "work"
+    },
     {
         id: "9",
         title: "Cyber Cube",
@@ -20,15 +29,6 @@ export const projects = [
         type: "education"
     },
     {
-        id: "1",
-        title: "Pick & Roll",
-        description: "E-commerce: React, Firebase, Bootstrap, AOS",
-        image: ecommerce,
-        deployLink: "https://pickandroll.netlify.app/",
-        repositoryLink: "https://github.com/francobuceta/Ecommerce-React",
-        type: "education"
-    },
-    {
         id: "3",
         title: "Ágape Libros",
         description: "E-commerce: React, Material UI, Redux Toolkit",
@@ -36,6 +36,15 @@ export const projects = [
         deployLink: "https://agape-libros.com.ar/",
         repositoryLink: "",
         type: "work"
+    },
+    {
+        id: "1",
+        title: "Pick & Roll",
+        description: "E-commerce: React, Firebase, Bootstrap, AOS",
+        image: ecommerce,
+        deployLink: "https://pickandroll.netlify.app/",
+        repositoryLink: "https://github.com/francobuceta/Ecommerce-React",
+        type: "education"
     },
     {
         id: "2",
@@ -62,15 +71,6 @@ export const projects = [
         image: prodeconsa,
         deployLink: "https://amprodeconsa.com/index.html",
         repositoryLink: "https://github.com/francobuceta/Prodeconsa-SA",
-        type: "work"
-    },
-    {
-        id: "6",
-        title: "Custom Boutique",
-        description: "Landing Page: React, Tailwind, Axios",
-        image: boutique,
-        deployLink: "https://customboutique.com.ar/",
-        repositoryLink: "https://github.com/francobuceta/Custom-Boutique",
         type: "work"
     },
     {
