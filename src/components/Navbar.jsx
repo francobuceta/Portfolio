@@ -51,8 +51,13 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className="hidden hamburger_menu-container px-24">
-                        <FontAwesomeIcon icon={faBars} className="hamburger_menu" onClick={() => setOpen(!open)} /> 
+                    <div className={`hidden hamburger_menu-container mr-[24px] py-2 px-6 rounded-full transition-all duration-300 w-[30px] ${open ? "bg-secondary" : "bg-transparent"}`}>
+                        <FontAwesomeIcon 
+                            icon={faBars} 
+                            className="hamburger_menu" 
+                            style={{color: show && open && "white"}} 
+                            onClick={() => setOpen(!open)} 
+                        /> 
                     </div>
 
                     <div className={`${open ? "block" : "hidden"} navbar_list-container`}>

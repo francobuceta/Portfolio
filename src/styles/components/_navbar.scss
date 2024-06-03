@@ -179,7 +179,8 @@ header {
     }
 
     .hamburger_menu-container {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     .desktop_flags {
@@ -203,10 +204,6 @@ header {
             width: 12.75rem;
             height: 8.62rem;
         }
-    }
-
-    .hamburger_menu-container {
-        padding-right: 2rem;
     }
 }
 
