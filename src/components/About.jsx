@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons'; */
 import { technologies } from '../utils/skillsData/skills';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
-import spanishPdf from "../assets/cv.pdf";
-import englishPdf from "../assets/resume.pdf";
+/* import spanishPdf from "../assets/cv.pdf";
+import englishPdf from "../assets/resume.pdf"; */
 import ScrollReveal from 'scrollreveal';
 
 const About = () => {
@@ -33,7 +33,7 @@ const About = () => {
                         <h3 className="mb-5">{t("about.who")}</h3>
                         <p className="description">{t("about.description")}</p>
                         <p className="mt-5">{t("about.description2")}</p>
-                        <div>
+                        {/* <div>
                             <button>
                                 <a href={currentLenguage === "en" ? englishPdf : spanishPdf} 
                                     download={currentLenguage === "en" ? "Franco Buceta-Resume" : "Franco Buceta-CV"}
@@ -42,7 +42,7 @@ const About = () => {
                                     <span>{t("about.download")}</span>
                                 </a>
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                     
                     <div className="about_skills lg:mt-5">

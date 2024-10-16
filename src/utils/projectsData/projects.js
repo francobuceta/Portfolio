@@ -12,7 +12,6 @@ export const projects = [
     {
         id: "6",
         title: "BUSCOCAMPO",
-        description: "WebApp: React, Tailwind, Redux Toolkit, Nodejs, Express, MongoDB",
         image: buscoCampo,
         deployLink: "https://www.buscocampo.com/",
         repositoryLink: "",
@@ -21,7 +20,6 @@ export const projects = [
     {
         id: "9",
         title: "Cyber Cube",
-        description: "E-commerce: Next 13, Tailwind, Stripe, Redux Toolkit, Nodejs, Express, MongoDB",
         image: cyberCube,
         deployLink: "https://ecommerce-next-js-ebon.vercel.app/",
         repositoryLink: "https://github.com/francobuceta/Ecommerce-Next.js",
@@ -31,7 +29,6 @@ export const projects = [
     {
         id: "3",
         title: "Ágape Libros",
-        description: "E-commerce: React, Material UI, Redux Toolkit",
         image: agape,
         deployLink: "https://agape-libros.com.ar/",
         repositoryLink: "",
@@ -40,7 +37,6 @@ export const projects = [
     {
         id: "1",
         title: "Pick & Roll",
-        description: "E-commerce: React, Firebase, Bootstrap, AOS",
         image: ecommerce,
         deployLink: "https://pickandroll.netlify.app/",
         repositoryLink: "https://github.com/francobuceta/Ecommerce-React",
@@ -49,7 +45,6 @@ export const projects = [
     {
         id: "2",
         title: "Mercado Libre Clone",
-        description: "WebApp: React, Tailwind, Redux Toolkit, ChatGPT",
         image: meli,
         deployLink: "https://meli-clone-seven.vercel.app/",
         repositoryLink: "https://github.com/No-Country/s8-08-t-java-react-mercadolibre",
@@ -58,7 +53,6 @@ export const projects = [
     {
         id: "4",
         title: "Vip Agro",
-        description: "WebApp: Bubble.io",
         image: vipAgro,
         deployLink: "https://vipagro.com.ar/",
         repositoryLink: "",
@@ -67,7 +61,6 @@ export const projects = [
     {
         id: "5",
         title: "A&M Prodeconsa",
-        description: "Landing Page: HTML5, CSS3, JavaScript",
         image: prodeconsa,
         deployLink: "https://amprodeconsa.com/index.html",
         repositoryLink: "https://github.com/francobuceta/Prodeconsa-SA",
@@ -76,7 +69,6 @@ export const projects = [
     {
         id: "7",
         title: "Asteroids Game",
-        description: "JavaScript, P5.js, HTML5, CSS3",
         image: asteroids,
         deployLink: "https://asteroids-atari.netlify.app/",
         repositoryLink: "https://github.com/francobuceta/Asteroids",
@@ -85,7 +77,6 @@ export const projects = [
     {
         id: "8",
         title: "Bright English",
-        description: "WebApp: React, Bootstrap, Redux Toolkit, Axios",
         image: bright,
         deployLink: "https://bright-english.vercel.app/",
         repositoryLink: "https://github.com/No-Country/C9-26-Java-React",

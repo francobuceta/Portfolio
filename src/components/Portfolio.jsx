@@ -47,9 +47,9 @@ const Portfolio = () => {
                                     </picture>
                                     <div className="portfolio__description">
                                         <h3 className="portfolio__description-title">{project.title}</h3>
-                                        <p className="portfolio__description-text">
+                                        {/* <p className="portfolio__description-text">
                                             {project.description}
-                                        </p>
+                                        </p> */}
                                         <div className="buttons__container">
                                             <a className="button" href={project.deployLink} aria-label={project.id} target="_blank">
                                                 <FontAwesomeIcon icon={faEarthAmerica} />
