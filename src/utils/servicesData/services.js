@@ -7,6 +7,11 @@ const ServicesData = () => {
 
     const services = [
         {
+            icon: faCode,
+            title: t("services.develop-title"),
+            text: t("services.develop")
+        },
+        {
             icon: faMobileScreenButton,
             title: t("services.mobile-title"),
             text: t("services.mobile")
@@ -15,11 +20,6 @@ const ServicesData = () => {
             icon: faPalette,
             title: t("services.design-title"),
             text: t("services.design")
-        },
-        {
-            icon: faCode,
-            title: t("services.develop-title"),
-            text: t("services.develop")
         },
         {
             icon: faCartShopping,
