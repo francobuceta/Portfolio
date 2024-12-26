@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmerica } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
 import { projects } from "../utils/projectsData/projects";
 import ScrollReveal from 'scrollreveal';
