@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiGit, SiTypescript, SiFirebase, SiNodedotjs, SiMongodb, SiExpress, SiGithubactions, SiNestjs } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiGit, SiTypescript, SiFirebase, SiNodedotjs, SiMongodb, SiExpress, SiGithubactions, SiNestjs, SiAstro } from "react-icons/si";
 import { FaSass, FaDocker } from "react-icons/fa";
 
 export const technologies = [
@@ -33,6 +33,10 @@ export const technologies = [
     {
         icon: SiNextdotjs,
         text: "NEXT"
+    },
+    {
+        icon: SiAstro,
+        text: "ASTRO"
     },
     {
         icon: SiGit,
