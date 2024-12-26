@@ -22,6 +22,19 @@ const Portfolio = () => {
         });
     }, [])
 
+    const features = (id) => {
+        const features = t(`portfolio.projects.${id}Features`, { returnObjects: true });
+        const featuresArray = Array.isArray(features) ? features : [];
+
+        return (
+            <ul className="portfolio__features">
+                {featuresArray.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                ))}
+            </ul>
+        )
+    }
+
     return (
         <>
             <section className="container mx-auto px-16 mobile_padding" id="portfolio">
@@ -38,35 +51,24 @@ const Portfolio = () => {
                         projects.map(project => {
                             return (
                                 <div className="portfolio__item" key={project.id}>
-                                    <div className="absolute top-2 left-2 bg-primary p-2 font-bold font-poppins rounded-md">
-                                        {project.type === "education" ? t("portfolio.typeEducation") : t("portfolio.typeWork")}
-                                    </div>
                                     <picture>
                                         <source type="image/jpeg" srcSet={project.image}></source>
                                         <img className="portfolio__img" alt={`Portfolio item - ${project.title}`}></img>
                                     </picture>
                                     <div className="portfolio__description">
                                         <h3 className="portfolio__description-title">{project.title}</h3>
-                                        {/* <p className="portfolio__description-text">
-                                            {project.description}
-                                        </p> */}
+                                        <p className="portfolio__description-text">
+                                            {t(`portfolio.projects.${project.id}Title`)}
+                                        </p>
+                                        {
+                                            features(project.id)
+                                        }
                                         <div className="buttons__container">
-                                            <a className="button" href={project.deployLink} aria-label={project.id} target="_blank">
-                                                <FontAwesomeIcon icon={faEarthAmerica} />
-                                                <span>{t("portfolio.website")}</span>
-                                            </a>
                                             {
-                                                project.repositoryLink !== "" &&
-                                                <a className="button" href={project.repositoryLink} aria-label={project.id} target="_blank">
-                                                    <FontAwesomeIcon icon={faGithub} />
-                                                    <span>{project.repositoryLink2 ? "Frontend" :  t("portfolio.repository")}</span>
-                                                </a>
-                                            }
-                                            {
-                                                project.repositoryLink2 &&
-                                                <a className="button" href={project.repositoryLink2} aria-label={project.id} target="_blank">
-                                                    <FontAwesomeIcon icon={faGithub} />
-                                                    <span>Backend</span>
+                                                project.deployLink !== "" &&
+                                                <a className="button" href={project.deployLink} aria-label={project.id} target="_blank">
+                                                    <FontAwesomeIcon icon={faEarthAmerica} />
+                                                    <span>{t("portfolio.website")}</span>
                                                 </a>
                                             }
                                         </div>

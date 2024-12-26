@@ -24,7 +24,27 @@
         "website": "Website",
         "repository": "Repository",
         "typeWork": "Work",
-        "typeEducation": "Education"
+        "typeEducation": "Education",
+        "projects": {
+            "1Title": "Informative website featuring multiple pages that showcase a wide range of vehicles with detailed descriptions, specifications, and images, providing users with an engaging and comprehensive browsing experience.",
+            "1Features": ["Modern and attractive design", "Contact form", "Admin panel", "Developed following Ford's brand guidelines"],
+            "2Title": "Web platform that connects property owners and buyers interested in the purchase and sale of fields.",
+            "2Features": ["Property registration and publication", "Internal chat between users", "Filtering and pagination", "Download or request reports", "Profile management", "Typeform-style form to request fields"],
+            "3Title": "Portfolio for the Wamnet agency. Informative single-page website with multiple animations and smooth transitions.",
+            "3Features": ["Modern and attractive design", "Contact form", "Dynamic information"],
+            "4Title": "System for managing mutual affiliate control. It allows registering new affiliates, editing their information, and tracking payments made.",
+            "4Features": ["Users with different roles and permissions", "Filters and pagination", "Detection of payment due dates", "Export data to Excel", "Dynamic forms"],
+            "5Title": "E-commerce dedicated to the purchase of books, offering a wide variety of titles in different genres and authors, with detailed descriptions and payment options via bank transfer and Mercadopago.",
+            "5Features": ["Search system with autocomplete", "Shopping cart", "Secure checkout process", "Dynamic information", "Contact form"],
+            "6Title": "System for placing product orders to factory production. It allows managing customers, products, stock, and orders.",
+            "6Features": ["Users with different roles and permissions", "Filters and pagination", "Product order submission", "Order review by administration before passing to production", "Management of multiple stock variants", "Email sending", "Dynamic forms"],
+            "7Title": "Informative website showcasing different product variants with detailed descriptions, specifications in tables, and images.",
+            "7Features": ["Modern and attractive design", "Contact form"],
+            "8Title": "Web platform showcasing different variants of agricultural machines for purchase, also allowing users to submit their own models for sale to be quoted and published.",
+            "8Features": ["Modern and attractive design", "Search bar", "Custom filters", "Used machine submission form"],
+            "9Title": "E-commerce dedicated to the purchase of fictitious technological products, with detailed descriptions and Stripe payment gateway.",
+            "9Features": ["User registration with Google", "Filter by category and pagination", "Shopping cart", "Secure payment process", "Administration panel"]
+        }
     },
     "services": {
         "title": "Services",
