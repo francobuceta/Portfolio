@@ -33,7 +33,7 @@
             "3Title": "Portfolio for the Wamnet agency. Informative single-page website with multiple animations and smooth transitions.",
             "3Features": ["Modern and attractive design", "Contact form", "Dynamic information"],
             "4Title": "System for managing mutual affiliate control. It allows registering new affiliates, editing their information, and tracking payments made.",
-            "4Features": ["Users with different roles and permissions", "Filters and pagination", "Detection of payment due dates", "Export data to Excel", "Dynamic forms"],
+            "4Features": ["Users with different roles and permissions", "Filters and pagination", "Detection of payment due dates", "Export data to Excel", "Email sending", "Dynamic forms", "Generation of digital credential in pdf"],
             "5Title": "E-commerce dedicated to the purchase of books, offering a wide variety of titles in different genres and authors, with detailed descriptions and payment options via bank transfer and Mercadopago.",
             "5Features": ["Search system with autocomplete", "Shopping cart", "Secure checkout process", "Dynamic information", "Contact form"],
             "6Title": "System for placing product orders to factory production. It allows managing customers, products, stock, and orders.",

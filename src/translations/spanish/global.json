@@ -33,7 +33,7 @@
             "3Title": "Portfolio para la agencia Wamnet. Sitio web informativo de una sola página con múltiples animaciones y transiciones fluidas.",
             "3Features": ["Diseño moderno y atractivo", "Formulario de contacto", "Información dinámica"],
             "4Title": "Sistema para control de afiliados de mutual. Permite dar de alta nuevos afiliados, editar su información y llevar control de los pagos realizados.",
-            "4Features": ["Usuarios con distintos roles y permisos", "Filtros y paginación", "Detección de vencimiento de cuota", "Exportar datos en Excel", "Envío de emails", "Formularios dinámicos"],
+            "4Features": ["Usuarios con distintos roles y permisos", "Filtros y paginación", "Detección de vencimiento de cuota", "Exportar datos en Excel", "Envío de emails", "Formularios dinámicos", "Generacion de credencial en pdf"],
             "5Title": "E-commerce dedicado a la compra de libros, ofreciendo una amplia variedad de títulos en diferentes géneros y autores, con descripciones detalladas y opciones de pago por transferencia y Mercadopago.",
             "5Features": ["Sistema de búsqueda y autocompletado", "Carrito de compras", "Proceso de pago seguro", "Información dinámica", "Formulario de contacto"],
             "6Title": "Sistema para realizar pedido de productos a producción en fábrica. Permite gestionar clientes, productos, stock y pedidos.",
