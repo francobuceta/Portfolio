@@ -4,7 +4,7 @@ import sistema2 from "../../assets/sistema-2.png";
 import ford from "../../assets/proyecto-ford.png";
 import pwd from "../../assets/proyecto-pwd.png";
 import agape from "../../assets/proyecto-agape.png";
-import vipAgro from "../../assets/proyecto-vipagro.png";
+import cyrano from "../../assets/proyecto-cyrano.png";
 import cyberCube from "../../assets/proyecto-cyberCube.png";
 import buscoCampo from "../../assets/proyecto-buscocampo.png";
 
@@ -20,6 +20,12 @@ export const projects = [
         title: "BUSCOCAMPO",
         image: buscoCampo,
         deployLink: "https://www.buscocampo.com/",
+    },
+    {
+        id: "8",
+        title: "Cyrano",
+        image: cyrano,
+        deployLink: "https://www.heladeriacyrano.com.ar/",
     },
     {
         id: "3",
@@ -50,12 +56,6 @@ export const projects = [
         title: "PWD Solutions",
         image: pwd,
         deployLink: "https://www.pwdsolutions.com.ar/",
-    },
-    {
-        id: "8",
-        title: "Vip Agro",
-        image: vipAgro,
-        deployLink: "https://vipagro.com.ar/",
     },
     {
         id: "9",

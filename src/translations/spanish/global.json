@@ -40,8 +40,8 @@
             "6Features": ["Usuarios con distintos roles y permisos", "Filtros y paginación", "Envío de pedidos de productos", "Revisión de pedidos por parte de administración antes de pasar a producción", "Manejo de múltiples variantes de stock", "Envío de emails", "Formularios dinámicos"],
             "7Title": "Sitio web informativo que muestra las diferentes variantes de productos con descripciones detalladas, especificaciones en tablas e imágenes.",
             "7Features": ["Diseño moderno y atractivo", "Formulario de contacto"],
-            "8Title": "Plataforma web que muestra las diferentes variantes de máquinas agrícolas para la compra y permite también poder enviar el modelo que se tiene para la venta para que sea cotizado y publicado.",
-            "8Features": ["Diseño moderno y atractivo", "Barra de búsqueda", "Filtros personalizados", "Formulario de envío de usado"],
+            "8Title": "Sitio web informativo que muestra diferentes productos de helados, sabores, sucursales, historia y un formulario de contacto.",
+            "8Features": ["Diseño moderno, atractivo y fácil de usar", "Imágenes llamativas y de alta calidad de los productos y sabores de helados", "Panel de administración"],
             "9Title": "E-commerce dedicado a la compra de productos tecnológicos ficticios, con descripciones detalladas y pasarela de pago Stripe.",
             "9Features": ["Registro de usuarios con Google", "Filtro por categoría y paginación", "Carrito de compras", "Proceso de pago seguro", "Panel de administración"]
         }

@@ -40,8 +40,8 @@
             "6Features": ["Users with different roles and permissions", "Filters and pagination", "Product order submission", "Order review by administration before passing to production", "Management of multiple stock variants", "Email sending", "Dynamic forms"],
             "7Title": "Informative website showcasing different product variants with detailed descriptions, specifications in tables, and images.",
             "7Features": ["Modern and attractive design", "Contact form"],
-            "8Title": "Web platform showcasing different variants of agricultural machines for purchase, also allowing users to submit their own models for sale to be quoted and published.",
-            "8Features": ["Modern and attractive design", "Search bar", "Custom filters", "Used machine submission form"],
+            "8Title": "Informative website showcasing different ice cream products, flavors, branches, history, and a contact form.",
+            "8Features": ["Modern, attractive, and user-friendly design", "High-quality, eye-catching images of ice cream products and flavors", "Admin panel"],
             "9Title": "E-commerce dedicated to the purchase of fictitious technological products, with detailed descriptions and Stripe payment gateway.",
             "9Features": ["User registration with Google", "Filter by category and pagination", "Shopping cart", "Secure payment process", "Administration panel"]
         }
