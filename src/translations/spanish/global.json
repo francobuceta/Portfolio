@@ -42,8 +42,8 @@
             "7Features": ["Diseño moderno y atractivo", "Formulario de contacto"],
             "8Title": "Sitio web informativo que muestra diferentes productos de helados, sabores, sucursales, historia y un formulario de contacto.",
             "8Features": ["Diseño moderno, atractivo y fácil de usar", "Imágenes llamativas y de alta calidad de los productos y sabores de helados", "Panel de administración"],
-            "9Title": "E-commerce dedicado a la compra de productos tecnológicos ficticios, con descripciones detalladas y pasarela de pago Stripe.",
-            "9Features": ["Registro de usuarios con Google", "Filtro por categoría y paginación", "Carrito de compras", "Proceso de pago seguro", "Panel de administración"]
+            "9Title": "Aplicación web de inmobiliaria que permite a los usuarios explorar propiedades en venta y alquiler, aplicar filtros y contactar directamente al agente a través de un formulario integrado. Su diseño intuitivo y responsivo facilita la búsqueda y mejora la experiencia del cliente",
+            "9Features": ["Diseño moderno y atractivo", "Formulario de contacto", "Filtros y paginación", "Panel de administración"]
         }
     },
     "services": {

@@ -5,7 +5,7 @@ import ford from "../../assets/proyecto-ford.png";
 import pwd from "../../assets/proyecto-pwd.png";
 import agape from "../../assets/proyecto-agape.png";
 import cyrano from "../../assets/proyecto-cyrano.png";
-import cyberCube from "../../assets/proyecto-cyberCube.png";
+import corbalan from "../../assets/proyecto-corbalan.webp";
 import buscoCampo from "../../assets/proyecto-buscocampo.png";
 
 export const projects = [
@@ -52,16 +52,16 @@ export const projects = [
         deployLink: "",
     },
     {
+        id: "9",
+        title: "Camila Corbalan",
+        image: corbalan,
+        deployLink: "https://ecommerce-next-js-ebon.vercel.app/",
+        repositoryLink: "https://github.com/francobuceta/Ecommerce-Next.js",
+    },
+    {
         id: "7",
         title: "PWD Solutions",
         image: pwd,
         deployLink: "https://www.pwdsolutions.com.ar/",
-    },
-    {
-        id: "9",
-        title: "Cyber Cube",
-        image: cyberCube,
-        deployLink: "https://ecommerce-next-js-ebon.vercel.app/",
-        repositoryLink: "https://github.com/francobuceta/Ecommerce-Next.js",
     },
 ]
