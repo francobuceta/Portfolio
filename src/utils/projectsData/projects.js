@@ -55,8 +55,7 @@ export const projects = [
         id: "9",
         title: "Camila Corbalan",
         image: corbalan,
-        deployLink: "https://ecommerce-next-js-ebon.vercel.app/",
-        repositoryLink: "https://github.com/francobuceta/Ecommerce-Next.js",
+        deployLink: "https://www.camilacorbalan.com/",
     },
     {
         id: "7",
