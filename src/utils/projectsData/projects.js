@@ -22,16 +22,16 @@ export const projects = [
         deployLink: "https://www.buscocampo.com/",
     },
     {
+        id: "9",
+        title: "Camila Corbalan",
+        image: corbalan,
+        deployLink: "https://www.camilacorbalan.com/",
+    },
+    {
         id: "8",
         title: "Cyrano",
         image: cyrano,
         deployLink: "https://www.heladeriacyrano.com.ar/",
-    },
-    {
-        id: "3",
-        title: "Wamnet Rediseño",
-        image: wamnet,
-        deployLink: "https://wamnet.vercel.app/",
     },
     {
         id: "4",
@@ -52,10 +52,10 @@ export const projects = [
         deployLink: "",
     },
     {
-        id: "9",
-        title: "Camila Corbalan",
-        image: corbalan,
-        deployLink: "https://www.camilacorbalan.com/",
+        id: "3",
+        title: "Wamnet Rediseño",
+        image: wamnet,
+        deployLink: "https://wamnet.vercel.app/",
     },
     {
         id: "7",
